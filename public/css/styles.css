@@ -1,3 +1,15 @@
-h1{
-    color: red;
-}
+:root {
+    --main-black: #000000;
+    --main-white: #FFFFFF;
+    --main-dark-grey: #202327;
+    --wilmotte-blue: #40474F;
+    --light-grey: #EAEAEA;
+
+    --orange-red: #D9531E;
+    --red-brown: #AC8367;
+    --grey-brown: #918763;
+    --business-blue: #4060AF;
+
+    --succes: #8BC400;
+    --error: #E52526;
+  }
