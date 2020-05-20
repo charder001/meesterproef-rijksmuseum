@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 :root {
     --main-black: #000000;
     --main-white: #FFFFFF;
@@ -13,3 +14,9 @@
     --succes: #8BC400;
     --error: #E52526;
   }
+=======
+body{
+  font-family: 'Oswald', sans-serif;
+  }
+
+>>>>>>> c130d25570a04ed62855e964a287b1a992d39674
