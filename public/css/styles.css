@@ -15,9 +15,30 @@
   }
 body{
   font-family: 'Oswald', sans-serif;
+  background-color: var(--main-black);
+  margin: 0;
+  padding: 0;
   }
 
   h1 {
     color: var(--business-blue);
   }
+
+nav {
+
+  display: flex;
+  align-items: center;
+  background-color: var(--main-white);
+  padding: 1em;
+}
+
+nav ul {
+  display: flex;
+  margin-left: auto;
+}
+
+nav li {
+  list-style: none;
+  padding: .3em;
+}
 
