@@ -1,0 +1,25 @@
+nav {
+    display: flex;
+    align-items: center;
+    background-color: var(--main-white);
+    padding: 1em;
+  }
+  
+  nav ul {
+    display: flex;
+    margin-left: auto;
+  }
+  
+  nav li {
+    list-style: none;
+    padding: .3em;
+  }
+  
+  nav a {
+    color: var(--main-black);
+    text-decoration: none;
+}
+
+nav a:focus, nav a:hover{
+  color: var(--succes);
+}

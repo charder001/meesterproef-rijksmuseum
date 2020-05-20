@@ -13,32 +13,42 @@
     --succes: #8BC400;
     --error: #E52526;
   }
-body{
-  font-family: 'Oswald', sans-serif;
-  background-color: var(--main-black);
-  margin: 0;
-  padding: 0;
+  body{
+    font-family: 'Oswald', sans-serif;
+    background-color: var(--main-dark-grey);
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/nachtwacht.jpg"");
   }
 
   h1 {
-    color: var(--business-blue);
+    color: var(--orange-red);
   }
-
-nav {
-
-  display: flex;
-  align-items: center;
-  background-color: var(--main-white);
-  padding: 1em;
+  main {
+    padding: 0 10em;
 }
 
-nav ul {
-  display: flex;
-  margin-left: auto;
+article{
+  width: 50%;
+  margin-bottom: 50px;
+}
+article p{
+  color: var(--main-white);
+  font-weight: 300;
+  font-size: 2em;
 }
 
-nav li {
-  list-style: none;
-  padding: .3em;
+.button{
+  padding: .7em 1.5em;
+  font-size: 1.2em;
+  text-decoration: none;
+  color: var(--main-white);
+  background-color: var(--wilmotte-blue);
+  border: 2px solid var(--orange-red);
+  box-shadow: 0px 7px 37px -3px rgba(0,0,0,0.38);
 }
 
+.button:hover, .button:focus{
+  border-color: var(--succes)
+}
