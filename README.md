@@ -8,7 +8,6 @@ Improved ticket flow that is accessible for everyone.
 ## Tech stuff
 - Node.js
 - Express
-- Socket.io
 - Nodemon
 - Gulp
 - EJS
