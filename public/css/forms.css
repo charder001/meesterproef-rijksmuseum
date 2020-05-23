@@ -7,6 +7,17 @@ label{
     color: var(--main-white);
   }
 
-  input[type=number]{
-      height: 30px;
-  }
+  input[type="number"] {
+    font-size: 10em;
+    width: 60%;
+    color: var(--succes);
+    background-color: var(--main-dark-grey);
+    margin: 30px 0;
+}
+input[type="number"]:focus, input[type="number"]:hover{
+    border: 2px solid var(--succes);
+}
+
+#ageLabel {
+    display: block;
+}
