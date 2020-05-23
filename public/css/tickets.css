@@ -1,0 +1,46 @@
+.tickets {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tickets article {
+    background-color: var(--wilmotte-blue);
+    margin: 0 1em;
+    position: relative;
+}
+
+.tickets .ticketImage {
+    background-image: url("/images/1.jpg");
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.tickets h2 {
+    position: absolute;
+    top: 0;
+    color: var(--main-white);
+    background-color: var(--wilmotte-blue);
+    margin: 0;
+    padding: .4em;
+    font-weight: 400;
+}
+
+.tickets p {
+    font-size: 1.2em;
+}
+
+.tickets .button {
+    font-size: 1em;
+    padding: .5em 1em;
+}
+
+.ticketContent{
+    padding: 0 1em;
+}
+.tickets article:nth-child(2) .ticketImage{
+    background-image: url("/images/2.jpg");
+}
+.tickets article:nth-child(3) .ticketImage{
+    background-image: url("/images/3.jpg");
+}

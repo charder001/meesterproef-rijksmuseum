@@ -1,9 +1,18 @@
 <%- include('partials/head') %>
 
-
-<h1>Kies je Ticket</h1>
 <main>
+    <h1>Bestel je tickets</h1>
+
+    <article>
+    
+            <h2>Hoe oud ben je?</h2>
+            <form action="/ticketkeuze" method="POST">
+                <label for="age">Leeftijd</label>
+                  <input type="number" id="age" name="age" min="15" max="115" value="30">
+                <input type="submit" class="button" value="Bevestig leeftijd">
+            </div>
+            </form>
+        
+        </article>
 </main>
-
-
 <%- include('partials/footer') %>

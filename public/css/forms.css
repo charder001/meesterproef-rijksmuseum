@@ -1,0 +1,12 @@
+form .button {
+    display: block;
+    margin: 1em 0;
+}
+
+label{
+    color: var(--main-white);
+  }
+
+  input[type=number]{
+      height: 30px;
+  }

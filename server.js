@@ -16,7 +16,31 @@ app.set('view engine', 'ejs');
 app.set('views', 'views');
 
 app.get('/', (req, res) => {
- res.render('index')
+    res.render('index', {
+        title: 'Rijksmuseum'
+    })
 })
+
+app.get('/tickets', (req, res) => {
+    res.render('ticket', {
+        title: 'Rijksmuseum | Tickets'
+    })
+})
+
+
+app.post('/ticketkeuze', (req, res) => {
+    res.render('ticketkeuze', {
+        title: 'Rijksmuseum | Tickets',
+        age: req.body.age
+    })
+})
+                        
+app.get('/extra', (req, res) => {
+    res.render('extra', {
+        title: 'Rijksmuseum | Extra'
+    })
+})
+
+ 
 
 server.listen(PORT, () => console.log(`Server running on port ${PORT}`));

@@ -1,0 +1,56 @@
+<%- include('partials/head') %>
+
+
+
+<main>
+    <h1>Beschikbare tickets</h1>
+
+    <article>
+        <p>
+            Voor de leeftijd van <%= age %> jaar zijn deze tickets beschikbaar:
+        </p>
+    </article>
+    <section class="tickets">
+        <article>
+            <div class="ticketImage"></div>
+            <h2>Basis ticket</h2>
+            <div class="ticketContent">
+                <p>
+                    <b>Omschrijving:</b> Basis entree tot het rijksmuseum.
+                </p>
+                <p> Prijs: 40 euro.</p>
+                <p></p:><a href="/extra" class="button"> Kies dit ticket</a></p>
+            </div>
+        </article>
+
+        <article>
+            <div class="ticketImage"></div>
+            <h2>Entree en rondleiding</h2>
+            <div class="ticketContent">
+                <p>
+                    <b>Omschrijving:</b> Entree inclusief een groepsrondleiding
+                </p>
+                <p> Prijs: 65 euro.</p>
+                <p></p:><a href="/extra" class="button"> Kies dit ticket</a></p>
+            </div>
+        </article>
+
+        <article>
+            <div class="ticketImage"></div>
+            <h2>Exclusief ticket</h2>
+            <div class="ticketContent">
+                <p>
+                    <b>Omschrijving:</b> Entree inclusief privé rondleiding
+                </p>
+                <p> Prijs: 115 euro.</p>
+
+                <p></p:><a href="/extra" class="button"> Kies dit ticket</a></p>
+            </div>
+        </article>
+
+    </section>
+
+</main>
+
+
+<%- include('partials/footer') %>
