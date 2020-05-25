@@ -62,3 +62,18 @@ li{
     display: inline;
     padding: 1em;
 }
+
+.plusMinus {
+    display: flex;
+}
+
+.plusMinus p {
+    margin: 0;
+    padding: .5em 1em;
+    border: 2px solid var(--main-white);
+    border-radius: 100%;
+}
+
+.plusMinus input {
+    margin: 0 5px;
+}

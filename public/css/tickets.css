@@ -1,6 +1,7 @@
 .tickets {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    margin-bottom: 50px;
 }
 
 .tickets article {
@@ -35,9 +36,10 @@
     padding: .5em 1em;
 }
 
-.ticketContent{
-    padding: 0 1em;
+.ticketContent {
+    padding: 1.5em;
 }
+
 .tickets article:nth-child(2) .ticketImage{
     background-image: url("/images/2.jpg");
 }

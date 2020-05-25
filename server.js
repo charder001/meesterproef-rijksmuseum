@@ -28,10 +28,9 @@ app.get('/tickets', (req, res) => {
 })
 
 
-app.post('/ticketkeuze', (req, res) => {
+app.get('/ticketkeuze', (req, res) => {
     res.render('ticketkeuze', {
         title: 'Rijksmuseum | Tickets',
-        age: req.body.age
     })
 })
                         

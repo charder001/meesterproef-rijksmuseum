@@ -18,19 +18,20 @@
     background-color: var(--wilmotte-blue);
     margin: 0;
     padding: 0;
+    margin-bottom: 50px;
   }
 
   h1, h2, h3 {
     color: var(--main-white);
   }
   main {
-    padding: 0 10em;
+    padding: 0 5em;
 }
 
 article{
   width: 50%;
-  margin-bottom: 50px;
 }
+
 article p{
   color: var(--main-white);
   font-weight: 300;

@@ -6,7 +6,7 @@
 <main>
     <article>
         <p>
-            Voor de leeftijd van <%= age %> jaar zijn deze tickets beschikbaar:
+           Kies uw tickets
         </p>
     </article>
     <section class="tickets">
@@ -18,7 +18,16 @@
                     <b>Omschrijving:</b> Basis entree tot het rijksmuseum.
                 </p>
                 <p> Prijs: 19.00 euro.</p>
-                <p></p:><a href="/datum" class="button"> Kies dit ticket</a></p>
+
+                <form method="post" action="">   
+                    <label for="volwassen">Aantal</label>
+                     <div class="plusMinus">
+                        <p id="minusVolwassen">-</p>
+                        <input type="number" name="volwassen" id="volwassen" value="0">
+                        <p id="plusVolwassen">+</p>
+                    </div>           
+            </form>
+
             </div>
         </article>
 
@@ -30,7 +39,15 @@
                     <b>Omschrijving:</b> Kies deze optie alleen als je in het bezit bent van een museumkaart
                 </p>
                 <p> Prijs: 0.00 euro.</p>
-                <p></p:><a href="/datum" class="button"> Kies dit ticket</a></p>
+
+                <form method="post" action="">   
+                        <label for="museumKaart">Aantal</label>
+                         <div class="plusMinus">
+                            <p id="minusMuseum">-</p>
+                            <input type="number" name="museumkaart" id="museumKaart" value="0">
+                            <p id="plusMuseum">+</p>
+                        </div>          
+                </form>
             </div>
         </article>
 
@@ -42,14 +59,21 @@
                     <b>Omschrijving:</b> Entree voor CJP pas houders
                 </p>
                 <p> Prijs: 9.50 euro.</p>
-
-                <p></p:><a href="/datum" class="button"> Kies dit ticket</a></p>
+                <form method="post" action="">   
+                    <label for="cjp">Aantal</label>
+                     <div class="plusMinus">
+                        <p id="minusCjp">-</p>
+                        <input type="number" min="0" name="cjp" id="cjpKaart" value="0">
+                        <p id="plusCjp">+</p>
+                    </div>           
+            </form>
             </div>
         </article>
 
     </section>
-
+    <p></p:><a href="/datum" class="button"> Bestel</a></p>
 </main>
 
+<script src="/js/plusMinus.js"></script>
 
 <%- include('partials/footer') %>
