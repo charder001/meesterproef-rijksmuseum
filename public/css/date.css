@@ -1,0 +1,33 @@
+.dates {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dates article {
+    background-color: var(--wilmotte-blue);
+    margin: 0 1em;
+    position: relative;
+}
+
+.dates h2 {
+    top: 0;
+    color: var(--main-white);
+    background-color: var(--wilmotte-blue);
+    margin: 0;
+    padding: .4em;
+    font-weight: 400;
+}
+
+.dates p {
+    font-size: 1.2em;
+}
+
+.dates .button {
+    font-size: 1em;
+    padding: .5em 1em;
+    width: 100%;
+}
+
+.dateContent{
+    padding: 0 1em;
+}
