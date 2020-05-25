@@ -7,15 +7,23 @@ label{
     color: var(--main-white);
   }
 
-  input[type="number"] {
+#age {
     font-size: 10em;
-    width: 60%;
+    width: 3em;
     color: var(--succes);
     background-color: var(--main-dark-grey);
     margin: 30px 0;
 }
 input[type="number"]:focus, input[type="number"]:hover{
     border: 2px solid var(--succes);
+}
+
+select {
+    font-size: 6em;
+    width: 4em;
+    color: var(--succes);
+    background-color: var(--main-dark-grey);
+    margin: 30px 0;
 }
 
 #ageLabel {

@@ -1,0 +1,28 @@
+<%- include('partials/head') %>
+
+<main>
+    <h1>Welke datum is je bezoek?</h1>
+    <article>
+        <form action="/datumkeuze" method="POST">
+            <input type="number" min="2020" max="2021" value="2020">
+            <select name="months" id="months">
+                <option value="Januari">Januari</option>
+                <option value="Februari">Februari</option>
+                <option value="Maart">Maart</option>
+                <option value="April">April</option>
+                <option value="Mei">Mei</option>
+                <option value="Juni">Juni</option>
+                <option value="Juli">Juli</option>
+                <option value="Augustus">Augustus</option>
+                <option value="September">September</option>
+                <option value="Oktober">Oktober</option>
+                <option value="November">November</option>
+                <option value="December">December</option>
+              </select>
+            <input type="submit" class="button" value="Bevestig datum">
+            </div>
+        </form>
+
+    </article>
+</main>
+<%- include('partials/footer') %>
