@@ -18,6 +18,17 @@ input[type="number"]:focus, input[type="number"]:hover{
     border: 2px solid var(--succes);
 }
 
+input[type="number"] {
+    display: block;
+}
+
+#year {
+    background-color: var(--main-white);
+    color: var(--main-black);
+    border: none;
+    padding: .4em;
+}
+
 select {
     font-size: 6em;
     width: 4em;
@@ -28,4 +39,14 @@ select {
 
 #ageLabel {
     display: block;
+}
+
+ul {
+    color: white;
+    list-style: none;
+}
+
+li{
+    display: inline;
+    padding: 1em;
 }

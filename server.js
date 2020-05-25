@@ -49,7 +49,8 @@ app.get('/datum', (req, res) => {
 
 app.post('/datumkeuze', (req, res) => {
     res.render('extra', {
-        title: 'Rijksmuseum | Extra'
+        title: 'Rijksmuseum | Extra',
+        months: req.body.months.value
     })
 })
 
