@@ -1,18 +1,20 @@
 .dates {
     display: flex;
     justify-content: space-between;
+    margin-top: 2em;
+    margin-bottom: 3em;
 }
 
 .dates article {
-    background-color: var(--wilmotte-blue);
-    margin: 0 1em;
+    margin: 0 2em;
     position: relative;
+    background-color: var(--main-dark-grey);
+    padding: 1em;
 }
 
 .dates h2 {
     top: 0;
     color: var(--main-white);
-    background-color: var(--wilmotte-blue);
     margin: 0;
     padding: .4em;
     font-weight: 400;
@@ -30,4 +32,16 @@
 
 .dateContent{
     padding: 0 1em;
+}
+
+.dates ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.dates li {
+    display: block;
+    padding: 0;
+    margin: .2em;
 }
