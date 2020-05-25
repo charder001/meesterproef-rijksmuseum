@@ -4,7 +4,7 @@
 }
 
 .tickets article {
-    background-color: var(--wilmotte-blue);
+    background-color: var(--main-dark-grey);
     margin: 0 1em;
     position: relative;
 }
@@ -20,7 +20,7 @@
     position: absolute;
     top: 0;
     color: var(--main-white);
-    background-color: var(--wilmotte-blue);
+    background-color: var(--main-dark-grey);
     margin: 0;
     padding: .4em;
     font-weight: 400;
