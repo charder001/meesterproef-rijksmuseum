@@ -47,6 +47,12 @@ app.get('/datum', (req, res) => {
     })
 })
 
+app.post('/datumkeuze', (req, res) => {
+    res.render('extra', {
+        title: 'Rijksmuseum | Extra'
+    })
+})
+
  
 
 server.listen(PORT, () => console.log(`Server running on port ${PORT}`));
