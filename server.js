@@ -46,6 +46,12 @@ app.get('/datum', (req, res) => {
     })
 })
 
+app.get('/test', (req, res) => {
+    res.render('test', {
+        title: 'Rijksmuseum | test'
+    })
+})
+
 app.post('/datumkeuze', (req, res) => {
     res.render('extra', {
         title: 'Rijksmuseum | Extra',
