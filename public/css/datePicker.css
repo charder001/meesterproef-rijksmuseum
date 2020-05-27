@@ -17,7 +17,7 @@
   
   .datepicker button.icon:focus {
     outline: none;
-    border-color: hsl(216, 80%, 55%);
+    border-color: var(--business-blue);
   }
   
   .datepicker span.arrow {
@@ -37,16 +37,16 @@
     width: 45%;
     clear: both;
     display: none;
-    border: 3px solid hsl(216, 80%, 55%);
+    border: 3px solid var(--business-blue);
     margin-top: 1em;
     border-radius: 5px;
     padding: 0;
-    background-color: #fff;
+    background-color:  var(--main-white);
   }
   
   .datepicker .header {
     cursor: default;
-    background-color: hsl(216, 80%, 55%);
+    background-color: var(--business-blue);
     padding: 7px;
     font-weight: bold;
     text-transform: uppercase;
@@ -204,7 +204,11 @@
     padding-top: 0.25em;
     padding-left: 1em;
     height: 1.75em;
-    background: hsl(216, 80%, 55%);
+    background: var(--business-blue);
     color: white;
   }
   
+
+  #id-datepicker-1 button{
+      background-color: #EEEEEE;
+  }
