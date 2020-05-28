@@ -1,48 +1,52 @@
 .tickets {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
     margin-bottom: 50px;
 }
 
-.tickets article {
-    background-color: var(--main-dark-grey);
-    margin: 0 1em;
-    position: relative;
-}
-
-.tickets .ticketImage {
-    background-image: url("/images/1.jpg");
-    height: 200px;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.tickets h2 {
-    position: absolute;
-    top: 0;
-    color: var(--main-white);
-    background-color: var(--main-dark-grey);
-    margin: 0;
-    padding: .4em;
-    font-weight: 400;
+.ticketContent{
+    opacity: 0;
+    height: 0;
+    background-color: var(--main-white);
+    border-top: 2px solid #000;
 }
 
 .tickets p {
-    font-size: 1.2em;
+    color: var(--main-black);
+    padding: .5em;
+    margin: 0;
+    border-top: 2px solid #000;
 }
 
-.tickets .button {
-    font-size: 1em;
-    padding: .5em 1em;
+.header{
+    background-color: #ECECEC;
+}
+.header h2{
+    color: #666
+}
+.tickets .headerActive{
+    background-color: var(--orange-red);
 }
 
-.ticketContent {
-    padding: 1.5em;
+.headerActive h2{
+    color: var(--main-black);
 }
 
-.tickets article:nth-child(2) .ticketImage{
-    background-image: url("/images/2.jpg");
+.tickets span{
+    font-weight: 600;
 }
-.tickets article:nth-child(3) .ticketImage{
-    background-image: url("/images/3.jpg");
+
+.tickets .active{
+    opacity: 1;
+    height: unset;
+}
+
+.tickets .ticketContent{
+    width: 100%;
+}
+
+.tickets #standardTickets, .tickets #discountTickets{
+  width: 50%;
+  text-align: center;
+  box-sizing: border-box;
 }

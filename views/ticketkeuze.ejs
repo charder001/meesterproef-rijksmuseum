@@ -1,79 +1,39 @@
 <%- include('partials/head') %>
 
-    <div class="banner">
+<div class="banner">
     <h1>Beschikbare tickets</h1>
 </div>
 <main>
     <article>
         <p>
-           Kies uw tickets
+            Kies uw tickets
         </p>
     </article>
     <section class="tickets">
-        <article>
-            <div class="ticketImage"></div>
-            <h2>Entree volwassene</h2>
-            <div class="ticketContent">
-                <p>
-                    <b>Omschrijving:</b> Basis entree tot het rijksmuseum.
-                </p>
-                <p> Prijs: 19.00 euro.</p>
-
-                <form method="post" action="">   
-                    <label for="volwassen">Aantal</label>
-                     <div class="plusMinus">
-                        <p id="minusVolwassen">-</p>
-                        <input type="number" name="volwassen" id="volwassen" value="0">
-                        <p id="plusVolwassen">+</p>
-                    </div>           
-            </form>
-
-            </div>
+        <article id="standardTickets" class="headerActive header">
+            <h2>Standaard tickets</h2>
         </article>
-
-        <article>
-            <div class="ticketImage"></div>
-            <h2>Entree Museumkaart</h2>
-            <div class="ticketContent">
-                <p>
-                    <b>Omschrijving:</b> Kies deze optie alleen als je in het bezit bent van een museumkaart
-                </p>
-                <p> Prijs: 0.00 euro.</p>
-
-                <form method="post" action="">   
-                        <label for="museumKaart">Aantal</label>
-                         <div class="plusMinus">
-                            <p id="minusMuseum">-</p>
-                            <input type="number" name="museumkaart" id="museumKaart" value="0">
-                            <p id="plusMuseum">+</p>
-                        </div>          
-                </form>
-            </div>
+        <article id="discountTickets" class="header">
+            <h2>Pashouders / kortingen</h2>
         </article>
-
-        <article>
-            <div class="ticketImage"></div>
-            <h2>Entree CJP pas</h2>
-            <div class="ticketContent">
-                <p>
-                    <b>Omschrijving:</b> Entree voor CJP pas houders
-                </p>
-                <p> Prijs: 9.50 euro.</p>
-                <form method="post" action="">   
-                    <label for="cjp">Aantal</label>
-                     <div class="plusMinus">
-                        <p id="minusCjp">-</p>
-                        <input type="number" min="0" name="cjp" id="cjpKaart" value="0">
-                        <p id="plusCjp">+</p>
-                    </div>           
-            </form>
-            </div>
+        <article class="ticketContent active" id="content1">
+            <p> Entree volwassene <span> 19,-</span></p>
+            <p> Entree t/m 18 jaar <span> Gratis</span></p>
         </article>
+        <article class="ticketContent" id="content2">
+            <p> Entree CJP pas <span> 9,50,-</span></p>
+            <p> Entree BankGiro Loterij VIP-kaart <span> Gratis</span></p>
+            <p> Entree Museumkaart <span> Gratis</span></p>
+            <p> Ander geldig toegangsbewijs <span> Gratis</span></p>
+        </article>
+    </section>
+
 
     </section>
-    <p></p:><a href="/datum" class="button"> Bestel</a></p>
+    <p>
+        </p:><a href="/datum" class="button"> Bestel</a></p>
 </main>
 
-<script src="/js/plusMinus.js"></script>
+<script src="/js/ticket.js"></script>
 
 <%- include('partials/footer') %>
