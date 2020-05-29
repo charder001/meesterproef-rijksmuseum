@@ -24,7 +24,7 @@
 .header h2{
     color: #666
 }
-.tickets .headerActive{
+.tickets .headerActive, .tickets .header:focus{
     background-color: var(--orange-red);
 }
 
@@ -49,4 +49,8 @@
   width: 50%;
   text-align: center;
   box-sizing: border-box;
+}
+
+.tickets a {
+    text-decoration: navajowhite;
 }
