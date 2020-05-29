@@ -1,25 +1,24 @@
 .extras {
     display: flex;
+    border: none;
 }
 
-.extras article {
-    margin: 2em 1em;
-    background-color: var(--main-white);
-    padding: 1em;
+.extras input[type="radio"] {
+    opacity: 0;
 }
 
-.extras article:target {
-    margin: 2em 1em;
-    background-color: var(--main-white);
-    padding: 1em;
-    border: 1px solid var(--orange-red);
-}
+.extras input[type="radio"]:checked+label {
+    background: var(--orange-red);
+    color: var(--main-black)
+  }
 
-.extras article p {
-    font-size: 1em;
-    color: var(--main-black);
-}
+  .extras label {
+      width: 50%;
+      background: var(--main-white);
+      color: black;
+      padding: 1em;
+  }
 
-.extras article h3 {
-    color: var(--main-black);
-}
+  .extras label h3 {
+      color: var(--main-black);
+  }
