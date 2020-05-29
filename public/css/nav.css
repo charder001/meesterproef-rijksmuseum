@@ -23,3 +23,14 @@ nav {
 nav a:focus, nav a:hover{
   color: var(--succes);
 }
+
+#bottomnav {
+  margin-top: 20em;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+#bottomnav a {
+  margin-left: 80%;
+}
