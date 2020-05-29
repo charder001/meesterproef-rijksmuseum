@@ -5,7 +5,7 @@
 }
 
 .ticketContent{
-    opacity: 0;
+    display: none;
     height: 0;
     background-color: var(--main-white);
     border-top: 2px solid #000;
@@ -37,7 +37,7 @@
 }
 
 .tickets .active{
-    opacity: 1;
+    display: block;
     height: unset;
 }
 

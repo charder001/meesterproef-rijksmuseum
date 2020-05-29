@@ -1,0 +1,25 @@
+.extras {
+    display: flex;
+}
+
+.extras article {
+    margin: 2em 1em;
+    background-color: var(--main-white);
+    padding: 1em;
+}
+
+.extras article:target {
+    margin: 2em 1em;
+    background-color: var(--main-white);
+    padding: 1em;
+    border: 1px solid var(--orange-red);
+}
+
+.extras article p {
+    font-size: 1em;
+    color: var(--main-black);
+}
+
+.extras article h3 {
+    color: var(--main-black);
+}
