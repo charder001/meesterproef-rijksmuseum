@@ -1,7 +1,13 @@
+#mainextra {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10em;
+}
+
 .extras {
     display: flex;
     border: none;
-    margin-bottom: 10em;
+
 }
 
 .extras input[type="radio"] {
@@ -14,7 +20,7 @@
   }
 
   .extras label {
-      width: 50%;
+      width: 15em;
       background: var(--main-white);
       color: black;
       padding: 1em;
