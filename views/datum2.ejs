@@ -1,0 +1,29 @@
+<%- include('partials/head') %>
+
+<div class="banner">
+    <h1>Test date picker</h1>
+</div>
+<main>
+ <h2>gekozen dag is:<span id="chosenDay"></span> <span id="chosenMonth"></span> </h2>
+
+ <label for="day">Kies een dag</label>
+
+<select name="day" id="day">
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+</select> 
+
+<label for="month">Kies een maand</label>
+
+<select name="month" id="month">
+  <option value="januari">januari</option>
+  <option value="februari">februari</option>
+  <option value="maart">maart</option>
+  <option value="april">april</option>
+</select> 
+ 
+<script src="js/ticket2.js"> </script>
+</main>
+<%- include('partials/footer') %>
