@@ -1,11 +1,13 @@
 const inputWeek = document.getElementById('week');
 const inputMonth = document.getElementById('month');
+const inputDay = document.getElementById('day');
 
 const logMonth = document.getElementById('chosenMonth');
 const logDay = document.getElementById('chosenDay');
 
 inputMonth.addEventListener('input', updateMonth);
 inputWeek.addEventListener('input', updateWeek);
+inputDay.addEventListener('input', updateDay);
 
 let select = document.getElementById("day");
 select.classList.remove("active");
@@ -20,6 +22,10 @@ function updateWeek(e) {
     var myVar = eval(week);
     renderDay(myVar);
 }
+function updateDay(e){
+    logDay.textContent = ' ' + e.target.value + ' ';
+}
+
 
 let week1 = {
     1: 'Maandag 1',
