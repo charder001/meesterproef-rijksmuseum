@@ -71,6 +71,13 @@ app.post('/datumkeuze', (req, res) => {
     })
 })
 
- 
+
+
+app.post('/selectedDate', (req, res) => {
+    res.render('test', {
+        title: 'Rijksmuseum | test'
+    }) 
+    
+})
 
 server.listen(PORT, () => console.log(`Server running on port ${PORT}`));
