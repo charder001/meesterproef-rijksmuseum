@@ -21,6 +21,12 @@ app.get('/', (req, res) => {
     })
 })
 
+app.get('/tours', (req, res) => {
+    res.render('tours', {
+        title: 'Tours'
+    })
+})
+
 app.get('/tickets', (req, res) => {
     res.render('ticket', {
         title: 'Rijksmuseum | Tickets'

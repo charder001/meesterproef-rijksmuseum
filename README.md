@@ -22,4 +22,4 @@ Improved ticket flow that is accessible for everyone.
 
 ## Wishlist 
 - [x] accessible home page setup
-- [ ] Add-ons for tickets
+- [ ] Make dropdown datapicker server side 
