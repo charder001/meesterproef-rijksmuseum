@@ -21,6 +21,12 @@ app.get('/', (req, res) => {
     })
 })
 
+app.get('/tours', (req, res) => {
+    res.render('tours', {
+        title: 'Tours'
+    })
+})
+
 app.get('/tickets', (req, res) => {
     res.render('ticket', {
         title: 'Rijksmuseum | Tickets'
@@ -65,6 +71,13 @@ app.post('/datumkeuze', (req, res) => {
     })
 })
 
- 
+
+
+app.post('/selectedDate', (req, res) => {
+    res.render('test', {
+        title: 'Rijksmuseum | test'
+    }) 
+    
+})
 
 server.listen(PORT, () => console.log(`Server running on port ${PORT}`));

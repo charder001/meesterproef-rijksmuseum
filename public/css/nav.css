@@ -29,6 +29,7 @@ nav a:focus, nav a:hover{
   position: fixed;
   bottom: 0;
   width: 100%;
+  border-top: 2px solid var(--main-black);
 }
 
 #bottomnav a {
