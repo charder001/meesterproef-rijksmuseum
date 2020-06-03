@@ -38,36 +38,36 @@ let week1 = {
 };
 
 let week2 = {
-    1: 'Maandag 8',
-    2: 'Dinsdag 9',
-    3: 'Woensdag 10',
-    4: 'Donderdag 11',
-    5: 'Vrijdag 12',
-    6: 'Zaterdag 13',
-    7: 'Zondag 14',
+    8: 'Maandag 8',
+    9: 'Dinsdag 9',
+    10: 'Woensdag 10',
+    11: 'Donderdag 11',
+    12: 'Vrijdag 12',
+    13: 'Zaterdag 13',
+    14: 'Zondag 14',
 };
 
 let week3 = {
-    1: 'Maandag 15',
-    2: 'Dinsdag 16',
-    3: 'Woensdag 17',
-    4: 'Donderdag 18',
-    5: 'Vrijdag 19',
-    6: 'Zaterdag 20',
-    7: 'Zondag 21',
+    15: 'Maandag 15',
+    16: 'Dinsdag 16',
+    17: 'Woensdag 17',
+    18: 'Donderdag 18',
+    19: 'Vrijdag 19',
+    20: 'Zaterdag 20',
+    21: 'Zondag 21',
 };
 
 let week4 = {
-    1: 'Maandag 22',
-    2: 'Dinsdag 23',
-    3: 'Woensdag 24',
-    4: 'Donderdag 25',
-    5: 'Vrijdag 26',
-    6: 'Zaterdag 27',
-    7: 'Zondag 28',
+    22: 'Maandag 22',
+    23: 'Dinsdag 23',
+    24: 'Woensdag 24',
+    25: 'Donderdag 25',
+    26: 'Vrijdag 26',
+    27: 'Zaterdag 27',
+    28: 'Zondag 28',
 };
 
-
+renderDay(week1);
 
 function renderDay(e) {
     select.options.length = 0;
