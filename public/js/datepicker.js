@@ -950,9 +950,9 @@ var modifiedDate = dd
 var mm = (today.getMonth()+ 1)
 var yyyy = today.getFullYear();
 
-today = dd + '/' + mm + '/' + yyyy;
+today = mm + '/' + dd + '/' + yyyy;
 
-flexDateField.value = modifiedDate + `/${mm}` + `/${yyyy}`
+flexDateField.value =  mm + `/${modifiedDate}` + `/${yyyy}`
 
 flexDateSubmit.addEventListener("click", function (e) {
     e.preventDefault()
@@ -967,6 +967,6 @@ flexDateSubmit.addEventListener("click", function (e) {
         modifiedDate +=7
         console.log(modifiedDate + " volgende week")
     }
-    flexDateField.value = modifiedDate + `/${mm}` + `/${yyyy}`
+    flexDateField.value =  mm + `/${modifiedDate}` + `/${yyyy}`
     modifiedDate = dd
 })
