@@ -7,7 +7,7 @@ var selectedDay = document.querySelector("#selectedDay")
 var today = new Date();
 var dd = today.getDate()
 var modifiedDate = dd
-var mm = today.getMonth() //January is 0!
+var mm = (today.getMonth()+ 1) //January is 0!
 var yyyy = today.getFullYear();
 
 today = dd + '/' + mm + '/' + yyyy;

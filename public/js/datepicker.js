@@ -933,3 +933,40 @@ var DatePickerDay = function (domNode, datepicker, index, row, column) {
     this.datepicker.setMessage(this.datepicker.messageCursorKeys);
   };
   
+
+
+
+
+//magic datepicker
+var flexDateForm = document.querySelector("#flexDateForm")
+var flexDateField = document.querySelector("#id-textbox-1")
+var flexDateSubmit = document.querySelector("#flexDateSubmit")
+// var selectedDay = document.querySelector("#selectedDay")
+
+
+var today = new Date();
+var dd = today.getDate()
+var modifiedDate = dd
+var mm = (today.getMonth()+ 1)
+var yyyy = today.getFullYear();
+
+today = dd + '/' + mm + '/' + yyyy;
+
+flexDateField.value = modifiedDate + `/${mm}` + `/${yyyy}`
+
+flexDateSubmit.addEventListener("click", function (e) {
+    e.preventDefault()
+    console.log(flexDateField.value)
+    if(flexDateField.value == "morgen"){
+        modifiedDate ++
+        console.log(modifiedDate)
+    } else if (flexDateField.value == "vandaag"){
+        modifiedDate = dd
+        console.log(modifiedDate)
+    } else if (flexDateField.value == "volgende week"){
+        modifiedDate +=7
+        console.log(modifiedDate + " volgende week")
+    }
+    flexDateField.value = modifiedDate + `/${mm}` + `/${yyyy}`
+    modifiedDate = dd
+})
