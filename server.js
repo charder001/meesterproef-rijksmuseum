@@ -23,9 +23,16 @@ app.get('/', (req, res) => {
 
 app.get('/tours', (req, res) => {
     res.render('tours', {
-        title: 'Tours'
+        title: 'Rijksmuseum | Tours'
     })
 })
+
+app.get('/gegevens', (req, res) => {
+    res.render('gegevens', {
+        title: 'Rijksmuseum | Persoonsgegevens'
+    })
+})
+
 
 app.get('/tickets', (req, res) => {
     res.render('ticket', {
