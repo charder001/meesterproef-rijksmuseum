@@ -210,10 +210,8 @@
   
   #day {
     opacity: 0;
-    height: 0;
 }
 
 main .active {
   opacity: 1 !important;
-  height: unset !important;
 }
