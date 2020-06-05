@@ -27,3 +27,24 @@ function showDiscountTickets(){
 
     console.log('korting')
 }
+
+function selectNext(){
+    var select = document.getElementById('drop');
+    if(select.selectedIndex == 6){
+        select.selectedIndex = 6
+    } else {
+    select.selectedIndex++;
+    console.log(select.selectedIndex)
+    }
+  }
+
+  function selectPrev(){
+    var select = document.getElementById('drop');
+    if(select.selectedIndex == 0){
+        select.selectedIndex = 0
+
+    } else {
+    select.selectedIndex--;
+    console.log(select.selectedIndex)
+    }
+  }
