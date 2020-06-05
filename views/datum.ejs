@@ -34,6 +34,7 @@
 <h2>gekozen dag is: <span id="chosenDay"></span><span id="chosenMonth"></span>  </h2>
 
 <div id="myDatepicker" class="datepicker">
+  <p>In dit veld kan je typen wanneer je wilt gaan, bijvoorbeeld: vandaag, morgen, volgende week, 08/08/2020 etc.</p>
   <div class="date">
     <label for="id-textbox-1">
       Datum
@@ -42,11 +43,13 @@
            placeholder="mm/dd/yyyy"
            id="id-textbox-1"
            aria-autocomplete="none">
-           <input id="flexDateSubmit" type="submit">
+
     <button class=" button" aria-label="Choose Date" autofocus>
       <!-- <span class="fa fa-calendar-alt fa-2x"></span> -->
-      <p>Kies datum</p>
+      <img id="calendarImg" src="images/calendar.png">
     </button>
+    <br>
+    <input id="flexDateSubmit" type="submit">
   </div>
   <div id="id-datepicker-1"
        class="datepickerDialog"
