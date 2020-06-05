@@ -54,3 +54,56 @@
 .tickets a {
     text-decoration: navajowhite;
 }
+
+.tours article {
+    width: calc(33% - 2em);
+    background-color: var(--main-white);
+    margin: 1em;
+    border-radius: 10px;
+}
+
+.tours article h2{
+    color: var(--business-blue);
+    margin-bottom: 0;
+} 
+.tours article p{
+    color: var(--main-black);
+}
+
+.tours article p{
+    margin-top: 0;
+}
+
+.tours {
+    flex-wrap: wrap;
+    width: 70%;
+    margin: 2em auto;
+}
+
+.tours img {
+    width: 100%;
+    height: 150px;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+}
+
+.tours .content {
+    padding: 1em;
+    padding-top: 0;
+    text-align: center;
+}
+
+.tours label {
+    color: var(--main-black);
+}
+
+.tours hr {
+    width: 20%;
+    border: 2px solid var(--business-blue);
+}
+
+#ticketsAmount{
+    text-align: center;
+    color: var(--main-white);
+    font-size: 1.7em;
+}

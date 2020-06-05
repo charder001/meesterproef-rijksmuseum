@@ -3,15 +3,110 @@
 <div class="banner">
     <h1>Wil je een tour of expositie boeken?</h1>
 </div>
-<main class="centered">
+<p id="ticketsAmount">Je kan <b>7</b> tickets kiezen</p>
+<main class="centered tours">
     <article>
-        <p> <a class="button" href="datum">Nee</a> </p>
-        <p> <a class="button" href="datum">Groepstour</a> </p>
-        <p> <a class="button" href="datum">Privé tour</a> </p>
-        <p> <a class="button" href="datum">Expositie 1</a> </p>
-        <p> <a class="button" href="datum">Expositie 2</a> </p>
-        <p> <a class="button" href="datum">Expositie 3</a> </p>
+        <img src="/images/1.jpg">
+        <div class="content">
+            <h2>Enkel entree</h2>
+            <hr>
+            <p><b>Omschrijving:</b><br> Slechts entree tot het museum</p>
+            <label for="drop">Aantal</label>
+            <select id="drop">
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6+</option>
+            </select>
+        </div>
+    </article>
+    <article>
+        <img src="/images/2.jpg">
+        <div class="content">
+            <h2>Groepstour</h2>
+            <hr>
+            <p><b>Omschrijving:</b><br> Entree tot museum inclusief een groepstour</p>
+            <label for="drop">Aantal</label>
+            <select id="drop">
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6+</option>
+            </select>
+        </div>
+    </article>
+    <article>
+        <img src="/images/3.jpg">
+        <div class="content">
+            <h2>Privé tour</h2>
+            <hr>
+            <p><b>Omschrijving:</b><br> Entree tot museum inclusief een privé tour</p>
+            <label for="drop">Aantal</label>
+            <select id="drop">
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6+</option>
+            </select>
+        </div>
+    </article>
+    <article>
+        <img src="/images/3.jpg">
+        <div class="content">
+            <h2>Expositie 1</h2>
+            <hr>
+            <p><b>Omschrijving:</b><br> Entree tot museum inclusief een expositie 2</p>
+            <label for="drop">Aantal</label>
+            <select id="drop">
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6+</option>
+            </select>
+        </div>
+    </article>
+    <article>
+        <img src="/images/3.jpg">
+        <div class="content">
+            <h2>Expositie 2</h2>
+            <hr>
+            <p><b>Omschrijving:</b><br> Entree tot museum inclusief een expositie 2</p>
+            <label for="drop">Aantal</label>
+            <select id="drop">
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6+</option>
+            </select>
+        </div>
     </article>
 </main>
+<nav id="bottomnav">
+    <a href="/datum" class="button"> Volgende</a>
+  </nav>
+
 
 <%- include('partials/footer') %>
+
+
+<!-- <p> <a class="button" href="datum">Nee</a> </p>
+<p> <a class="button" href="datum">Groepstour</a> </p>
+<p> <a class="button" href="datum">Privé tour</a> </p>
+<p> <a class="button" href="datum">Expositie 1</a> </p>
+<p> <a class="button" href="datum">Expositie 2</a> </p>
+<p> <a class="button" href="datum">Expositie 3</a> </p> -->
