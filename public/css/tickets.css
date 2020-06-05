@@ -82,10 +82,13 @@
 
 .tours img {
     width: 100%;
-    height: 150px;
+    height: 200px;
+    object-fit: cover;
     border-top-left-radius: 9px;
     border-top-right-radius: 9px;
 }
+
+
 
 .tours .content {
     padding: 1em;
