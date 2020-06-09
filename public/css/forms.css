@@ -7,6 +7,7 @@ label{
     color: var(--main-white);
   }
 
+
 #age {
     font-size: 10em;
     width: 3em;
@@ -36,7 +37,6 @@ select {
     color: var(--succes);
     background-color: var(--main-dark-grey);
     height: 2em;
-    margin-right: 1em;
     border: none;
 }
 
