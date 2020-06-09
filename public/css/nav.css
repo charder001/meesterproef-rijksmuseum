@@ -1,14 +1,17 @@
 nav {
-    display: flex;
-    align-items: center;
-    background-color: var(--main-white);
-    padding: 1em;
-  }
+  display: flex;
+  align-items: center;
+  padding: .5em;
+  position: fixed;
+  top: 0;
+}
   
   nav ul {
     display: flex;
     margin-left: auto;
-  }
+    margin-top: 0;
+    margin-bottom: 0;
+}
   
   nav li {
     list-style: none;
@@ -16,24 +19,24 @@ nav {
   }
   
   nav a {
-    color: var(--main-black);
+    color: var(--main-white);
     text-decoration: none;
 }
 
 nav a:focus, nav a:hover{
   color: var(--succes);
 }
-
 #bottomnav {
-  margin-top: 20em;
-  position: fixed;
   bottom: 0;
+  top: unset;
   width: 100%;
-  border-top: 2px solid var(--main-black);
+  flex-direction: column;
+  box-sizing: border-box;
+  background-color: var(--main-white);
+  padding: .5em;
 }
-
 #bottomnav a {
-  margin-left: 80%;
+  align-self: end;
 }
 
 .skip-to-content-link {

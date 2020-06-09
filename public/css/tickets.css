@@ -10,12 +10,33 @@
     background-color: var(--main-white);
     border-top: 2px solid #000;
 }
-
+.ticket {
+    border-top: 2px solid #000;
+    display: flex;
+    justify-content: space-between;
+}
 .tickets p {
     color: var(--main-black);
     padding: .5em;
     margin: 0;
-    border-top: 2px solid #000;
+}
+.buttons {
+    display: flex;
+    align-items: center;
+}
+
+.buttons #prev{
+    background-color: var(--main-dark-grey);
+}
+
+.buttons button {
+    border-radius: 100%;
+    border: none;
+    color: #fff;
+    background-color: var(--business-blue);
+    width: 2em;
+    height: 2em;
+    margin: 0 .5em;
 }
 
 .header{
@@ -25,7 +46,7 @@
         color: var(--main-black);
 }
 .tickets .headerActive, .tickets .header:focus{
-    background-color: var(--orange-red);
+    background-color: var(--business-blue);
 }
 
 .headerActive h2 {

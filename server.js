@@ -2,11 +2,8 @@ const path = require('path');
 const http = require('http');
 const express = require('express');
 const bodyParser = require('body-parser');
-<<<<<<< HEAD
 var chrono = require('chrono-node');
-=======
 const moment = require('moment');
->>>>>>> dc856df1e393d0442d52534515034050add9a6a6
 const PORT = process.env.PORT || 3000;
 
 const app = express();
@@ -28,7 +25,8 @@ app.get('/', (req, res) => {
 
 app.get('/tours', (req, res) => {
     res.render('tours', {
-        title: 'Rijksmuseum | Tours'
+        title: 'Rijksmuseum | Tours',
+        nextPage: 'datum',
     })
 })
 
@@ -55,6 +53,7 @@ app.get('/datum2', (req, res) => {
 app.get('/ticketkeuze', (req, res) => {
     res.render('ticketkeuze', {
         title: 'Rijksmuseum | Tickets',
+        nextPage: 'tours',
     })
 })
                         
@@ -66,7 +65,8 @@ app.get('/extra', (req, res) => {
 
 app.get('/datum', (req, res) => {
     res.render('datum', {
-        title: 'Rijksmuseum | Datum'
+        title: 'Rijksmuseum | Datum',
+        nextPage: 'gegevens',
     })
 })
 
@@ -80,22 +80,6 @@ app.post('/datumkeuze', (req, res) => {
     res.render('extra', {
         title: 'Rijksmuseum | Extra',
         months: req.body.months.value
-    })
-})
-
-app.get('/testdate', (req, res) => {
-    res.render('testdate', {
-        title: 'Rijksmuseum | test',
-    })
-})
-
-let value = '';
-app.post('/testdate2', (req, res) => {
-    dateValue(req.body.momentdate)
-    let invoer = 'Gekozen datum is: ' + value;
-    res.render('testdate2', {
-        title: 'Rijksmuseum | testresultaat',
-        chosen: invoer,
     })
 })
 
@@ -131,19 +115,6 @@ var custom = new chrono.Chrono();
 custom.parsers.push(morgenParser);
 
 console.log(custom.parseDate("morgen"))
-
-// var pickedDate = chrono.parseDate('morgen')
-// console.log(pickedDate)
-function dateValue(date){
-    if (date == "morgen"){
-        console.log( 'de dag is morgen')
-        value = moment().add(1, 'days').calendar();
-    }
-    else  if (date == "overmorgen"){
-        console.log( 'de dag is overmorgen')
-        value = moment().add(2, 'days').calendar();
-    }
-}
 
 
 server.listen(PORT, () => console.log(`Server running on port ${PORT}`));
