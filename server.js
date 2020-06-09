@@ -2,6 +2,7 @@ const path = require('path');
 const http = require('http');
 const express = require('express');
 const bodyParser = require('body-parser');
+const moment = require('moment');
 const PORT = process.env.PORT || 3000;
 
 const app = express();
@@ -78,7 +79,21 @@ app.post('/datumkeuze', (req, res) => {
     })
 })
 
+app.get('/testdate', (req, res) => {
+    res.render('testdate', {
+        title: 'Rijksmuseum | test',
+    })
+})
 
+let value = '';
+app.post('/testdate2', (req, res) => {
+    dateValue(req.body.momentdate)
+    let invoer = 'Gekozen datum is: ' + value;
+    res.render('testdate2', {
+        title: 'Rijksmuseum | testresultaat',
+        chosen: invoer,
+    })
+})
 
 app.post('/selectedDate', (req, res) => {
     res.render('test', {
@@ -86,5 +101,17 @@ app.post('/selectedDate', (req, res) => {
     }) 
     
 })
+
+function dateValue(date){
+    if (date == "morgen"){
+        console.log( 'de dag is morgen')
+        value = moment().add(1, 'days').calendar();
+    }
+    else  if (date == "overmorgen"){
+        console.log( 'de dag is overmorgen')
+        value = moment().add(2, 'days').calendar();
+    }
+}
+
 
 server.listen(PORT, () => console.log(`Server running on port ${PORT}`));
