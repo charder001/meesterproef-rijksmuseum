@@ -10,7 +10,7 @@ module.exports = function (app) {
     app.get('/tours', (req, res) => {
         res.render('tours', {
             title: 'Rijksmuseum | Tours',
-            nextPage: 'datum',
+            nextPage: 'test',
         })
     })
 
@@ -57,7 +57,8 @@ module.exports = function (app) {
     app.get('/test', (req, res) => {
         res.render('test', {
             title: 'Rijksmuseum | test',
-            selectedDay: "today"
+            selectedDay: "today",
+            nextPage: 'gegevens',
         })
     })
     app.post('/test', (req, res) => {
