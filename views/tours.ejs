@@ -3,7 +3,7 @@
 <div class="banner">
     <h1>Wat voor soort ticket(s) wil je?</h1>
 </div>
-<p id="ticketsAmount">Je kan <b>7</b> tickets kiezen</p>
+<p id="ticketsAmount">Je kan <b id="amount"></b> tickets kiezen</p>
 <main class="centered tours">
     <article>
         <img src="/images/1.jpg">
@@ -127,7 +127,12 @@
         </div>
     </article> -->
 </main>
-
+<script>
+   ticketAmount = localStorage.getItem("ticketAmount");
+   console.log(ticketAmount)
+   document.getElementById("amount").innerHTML = ticketAmount;
+ 
+</script>
 <%- include('partials/bottomNav') %>
 <%- include('partials/footer') %>
 

@@ -14,8 +14,6 @@ function showStandardTickets(){
 
     standard.classList.add("headerActive");
     discount.classList.remove("headerActive");
-
-    console.log('standaard')
 }
 
 function showDiscountTickets(){
@@ -24,8 +22,6 @@ function showDiscountTickets(){
 
     discount.classList.add("headerActive");
     standard.classList.remove("headerActive");
-
-    console.log('korting')
 }
 
 function selectNext(){
@@ -48,3 +44,49 @@ function selectNext(){
     console.log(select.selectedIndex)
     }
   }
+
+  let drop1 = document.getElementById("drop1");
+  let drop2 = document.getElementById("drop2");
+  let drop3 = document.getElementById("drop3");
+  let drop4 = document.getElementById("drop4");
+  let drop5 = document.getElementById("drop5");
+  let drop6 = document.getElementById("drop6");
+  let ticketHeader = document.getElementById("totalTickets");
+
+
+  drop1.addEventListener("change", calcTicketAmount);
+  drop2.addEventListener("change", calcTicketAmount);
+  drop3.addEventListener("change", calcTicketAmount);
+  drop4.addEventListener("change", calcTicketAmount);
+  drop5.addEventListener("change", calcTicketAmount);
+  drop6.addEventListener("change", calcTicketAmount);
+
+  function calcTicketAmount() {
+    var els = document.getElementsByClassName('ticketAmount'); 
+    var total1 = 0;
+
+
+    for (var i = 0; i < els.length; i++) {
+        total1 += parseInt(els[i].value, 10);
+    }
+    localStorage.setItem("ticketAmount", total1);
+    console.log( 'amount = ' + total1)
+    ticketHeader.innerHTML = 'Totaal aantal tickets: ' + total1;
+ //   console.log(localStorage.getItem("ticketAmount"));
+}
+
+
+//   let myObj = {
+//       ticketAmount: 5
+//   }
+
+//   let myObj_serialized = JSON.stringify(myObj);
+//   localStorage.setItem("myObj", myObj_serialized);
+
+//   let myObj_deserialized = JSON.parse(localStorage.getItem("myObj"));
+
+//   console.log(myObj_deserialized);
+
+
+
+// localStorage.clear();
