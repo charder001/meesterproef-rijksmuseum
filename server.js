@@ -2,11 +2,8 @@ const path = require('path');
 const http = require('http');
 const express = require('express');
 const bodyParser = require('body-parser');
-<<<<<<< HEAD
 var chrono = require('chrono-node');
-=======
 const moment = require('moment');
->>>>>>> dc856df1e393d0442d52534515034050add9a6a6
 const PORT = process.env.PORT || 3000;
 
 const app = express();
