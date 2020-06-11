@@ -61,31 +61,47 @@ module.exports = function (app) {
         })
     })
     app.post('/test', (req, res) => {
-                //chrono
-                var morgenParser = new chrono.Parser();
-                // Provide search pattern
-                morgenParser.pattern = function () {
-                    return /morgen/;
-                };
-        
-                // This function will be called when matched pattern is found
-                morgenParser.extract = function (text, ref, match, opt) {
-        
-                    // Return a parsed result, that is 25 December
-                    return new chrono.ParsedResult({
-                        ref: chrono.parseDate('tomorrow'),
-                        text: match[0],
-                        index: match.index,
-                    });
-                };
-        
-                var custom = new chrono.Chrono();
-                custom.parsers.push(morgenParser);
-        
-        
-                // selectedDay.innerText = custom.parseDate(req.body.flexDateField)
-                // console.log(custom.parseDate(req.body.flexDateField))
-                // console.log(req.body.flexDateField)
+        //vertaling morgen
+        var morgenParser = new chrono.Parser();
+        // Provide search pattern
+        morgenParser.pattern = function () {
+            return /morgen/;
+        };
+
+        // This function will be called when matched pattern is found
+        morgenParser.extract = function (text, ref, match, opt) {
+
+            // Return a parsed result, that is 25 December
+            return new chrono.ParsedResult({
+                ref: chrono.parseDate('tomorrow'),
+                text: match[0],
+                index: match.index,
+            });
+        };
+
+        //vertaling volgende week
+        var volgendeWeekParser = new chrono.Parser();
+        // Provide search pattern
+        volgendeWeekParser.pattern = function () {
+            return /volgende week/;
+        };
+
+        // This function will be called when matched pattern is found
+        volgendeWeekParser.extract = function (text, ref, match, opt) {
+
+            // Return a parsed result, that is 25 December
+            return new chrono.ParsedResult({
+                ref: chrono.parseDate('next week'),
+                text: match[0],
+                index: match.index,
+            });
+        };
+
+        //push custom parsers naar chrono
+        var custom = new chrono.Chrono();
+        custom.parsers.push(morgenParser);
+        custom.parsers.push(volgendeWeekParser);
+
         res.render('test', {
             title: 'Rijksmuseum | test',
             months: req.body.flexDateField,
