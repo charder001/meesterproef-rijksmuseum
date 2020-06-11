@@ -13,6 +13,7 @@
     --succes: #8BC400;
     --error: #E52526;
   }
+
   body{
     font-family: 'Oswald', sans-serif;
     background-color: var(--wilmotte-blue);

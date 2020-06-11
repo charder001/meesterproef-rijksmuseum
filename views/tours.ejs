@@ -1,9 +1,9 @@
 <%- include('partials/head') %>
 
 <div class="banner">
-    <h1>Wil je een tour of expositie boeken?</h1>
+    <h1>Wat voor soort ticket(s) wil je?</h1>
 </div>
-<p id="ticketsAmount">Je kan <b>7</b> tickets kiezen</p>
+<p id="ticketsAmount">Je kan <b id="amount"></b> tickets kiezen</p>
 <main class="centered tours">
     <article>
         <img src="/images/1.jpg">
@@ -11,8 +11,11 @@
             <h2>Enkel entree</h2>
             <hr>
             <p><b>Omschrijving:</b><br> Slechts entree tot het museum</p>
+        </div>
+        <div class="buttons">
             <label for="drop">Aantal</label>
-            <button id="prev" onclick="selectPrev()">+</button>
+            <button id="prev" onclick="selectPrev()"><i class="fa fa-minus" aria-hidden="true"></i>
+            </button>
             <select id="drop">
                 <option>0</option>
                 <option>1</option>
@@ -22,7 +25,8 @@
                 <option>5</option>
                 <option>6+</option>
             </select>
-            <button id="next" onclick="selectNext()">+</button>
+            <button id="next" onclick="selectNext()"><i class="fa fa-plus" aria-hidden="true"></i>
+            </button>
         </div>
     </article>
     <article>
@@ -31,19 +35,23 @@
             <h2>Groepstour</h2>
             <hr>
             <p><b>Omschrijving:</b><br> Entree tot museum inclusief een groepstour</p>
-            <label for="drop">Aantal</label>
-            <button id="prev" onclick="selectPrev()">+</button>
-            <select id="drop">
-                <option>0</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-                <option>6+</option>
-            </select>
-            <button id="next" onclick="selectNext()">+</button>
         </div>
+                <div class="buttons">
+                    <label for="drop">Aantal</label>
+                    <button id="prev" onclick="selectPrev()"><i class="fa fa-minus" aria-hidden="true"></i>
+                    </button>
+                    <select id="drop">
+                        <option>0</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6+</option>
+                    </select>
+                    <button id="next" onclick="selectNext()"><i class="fa fa-plus" aria-hidden="true"></i>
+                    </button>
+                </div>
     </article>
     <article>
         <img src="/images/3.jpg">
@@ -51,39 +59,47 @@
             <h2>Privé tour</h2>
             <hr>
             <p><b>Omschrijving:</b><br> Entree tot museum inclusief een privé tour</p>
-            <label for="drop">Aantal</label>
-            <button id="prev" onclick="selectPrev()">+</button>
-            <select id="drop">
-                <option>0</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-                <option>6+</option>
-            </select>
-            <button id="next" onclick="selectNext()">+</button>
         </div>
+                <div class="buttons">
+                    <label for="drop">Aantal</label>
+                    <button id="prev" onclick="selectPrev()"><i class="fa fa-minus" aria-hidden="true"></i>
+                    </button>
+                    <select id="drop">
+                        <option>0</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6+</option>
+                    </select>
+                    <button id="next" onclick="selectNext()"><i class="fa fa-plus" aria-hidden="true"></i>
+                    </button>
+                </div>
     </article>
-    <article>
+    <!-- <article>
         <img src="/images/3.jpg">
         <div class="content">
             <h2>Expositie 1</h2>
             <hr>
             <p><b>Omschrijving:</b><br> Entree tot museum inclusief een expositie 2</p>
-            <label for="drop">Aantal</label>
-            <button id="prev" onclick="selectPrev()">+</button>
-            <select id="drop">
-                <option>0</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-                <option>6+</option>
-            </select>
-            <button id="next" onclick="selectNext()">+</button>
         </div>
+                <div class="buttons">
+                    <label for="drop">Aantal</label>
+                    <button id="prev" onclick="selectPrev()"><i class="fa fa-minus" aria-hidden="true"></i>
+                    </button>
+                    <select id="drop">
+                        <option>0</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6+</option>
+                    </select>
+                    <button id="next" onclick="selectNext()"><i class="fa fa-plus" aria-hidden="true"></i>
+                    </button>
+                </div>
     </article>
     <article>
         <img src="/images/3.jpg">
@@ -91,22 +107,32 @@
             <h2>Expositie 2</h2>
             <hr>
             <p><b>Omschrijving:</b><br> Entree tot museum inclusief een expositie 2</p>
-            <label for="drop">Aantal</label>
-            <button id="prev" onclick="selectPrev()">+</button>
-            <select id="drop">
-                <option>0</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-                <option>6+</option>
-            </select>
-            <button id="next" onclick="selectNext()">+</button>
         </div>
-    </article>
+                <div class="buttons">
+                    <label for="drop">Aantal</label>
+                    <button id="prev" onclick="selectPrev()"><i class="fa fa-minus" aria-hidden="true"></i>
+                    </button>
+                    <select id="drop">
+                        <option>0</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6+</option>
+                    </select>
+                    <button id="next" onclick="selectNext()"><i class="fa fa-plus" aria-hidden="true"></i>
+                    </button>
+                </div>
+        </div>
+    </article> -->
 </main>
-
+<script>
+   ticketAmount = localStorage.getItem("ticketAmount");
+   console.log(ticketAmount)
+   document.getElementById("amount").innerHTML = ticketAmount;
+ 
+</script>
 <%- include('partials/bottomNav') %>
 <%- include('partials/footer') %>
 
