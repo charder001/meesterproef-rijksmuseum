@@ -83,6 +83,6 @@ li{
     display: block;
 }
 
-.datepicker button {
+.datepicker .calendarButton {
     margin-top: -1em;
 }
