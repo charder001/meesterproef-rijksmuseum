@@ -12,16 +12,16 @@ function showStandardTickets(){
     content1.classList.add("active");
     content2.classList.remove("active");
 
-    standard.classList.add("headerActive");
-    discount.classList.remove("headerActive");
+    // standard.classList.add("headerActive");
+    // discount.classList.remove("headerActive");
 }
 
 function showDiscountTickets(){
     content2.classList.add("active");
     content1.classList.remove("active");
 
-    discount.classList.add("headerActive");
-    standard.classList.remove("headerActive");
+    // discount.classList.add("headerActive");
+    // standard.classList.remove("headerActive");
 }
 
 function selectNext(){

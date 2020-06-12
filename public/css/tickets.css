@@ -2,6 +2,8 @@
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 10em;
+    width: 50%;
+    margin: auto;
 }
 
 .ticketContent{
@@ -67,7 +69,7 @@
 }
 
 .tickets #standardTickets, .tickets #discountTickets{
-  width: 50%;
+  width: 100%;
   text-align: center;
   box-sizing: border-box;
 }
