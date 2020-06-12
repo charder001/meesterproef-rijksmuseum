@@ -108,9 +108,9 @@ module.exports = function (app) {
         var cleanData = stringData.split(" ")
         var sortedData = cleanData[0] + " " + cleanData[2] + " " + cleanData[1] + " " + cleanData[3]
 
-        res.render('test', {
+        res.render('time', {
             title: 'Rijksmuseum | test',
-            nextPage: 'test',
+            nextPage: 'gegevens',
             months: req.body.flexDateField,
             selectedDay: sortedData
         })
