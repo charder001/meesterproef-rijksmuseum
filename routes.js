@@ -57,7 +57,7 @@ module.exports = function (app) {
     app.get('/test', (req, res) => {
         res.render('test', {
             title: 'Rijksmuseum | test',
-            selectedDay: "today",
+            selectedDay: "Vandaag",
             nextPage: 'gegevens',
         })
     })
@@ -103,10 +103,16 @@ module.exports = function (app) {
         custom.parsers.push(morgenParser);
         custom.parsers.push(volgendeWeekParser);
 
+        var rawData = custom.parseDate(req.body.flexDateField)
+        var stringData = String(rawData)
+        var cleanData = stringData.split(" ")
+        var sortedData = cleanData[0] + " " + cleanData[2] + " " + cleanData[1] + " " + cleanData[3]
+
         res.render('test', {
             title: 'Rijksmuseum | test',
+            nextPage: 'test',
             months: req.body.flexDateField,
-            selectedDay: custom.parseDate(req.body.flexDateField)
+            selectedDay: sortedData
         })
 
     })
