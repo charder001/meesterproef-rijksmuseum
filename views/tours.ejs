@@ -3,143 +3,39 @@
 <div class="banner">
     <h1>Wat voor soort ticket(s) wil je?</h1>
 </div>
-<p id="ticketsAmount">Je kan <b id="amount"></b> tickets kiezen</p>
-<main class="centered tours">
-    <article>
-        <img src="/images/1.jpg">
-        <div class="content">
-            <h2>Enkel entree</h2>
-            <hr>
-            <p><b>Omschrijving:</b><br> Slechts entree tot het museum</p>
-        </div>
-        <div class="buttons">
-            <label for="drop">Aantal</label>
-            <button id="prev" onclick="selectPrev()"><i class="fa fa-minus" aria-hidden="true"></i>
-            </button>
-            <select id="drop">
-                <option>0</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-                <option>6+</option>
-            </select>
-            <button id="next" onclick="selectNext()"><i class="fa fa-plus" aria-hidden="true"></i>
-            </button>
-        </div>
-    </article>
-    <article>
-        <img src="/images/2.jpg">
-        <div class="content">
-            <h2>Groepstour</h2>
-            <hr>
-            <p><b>Omschrijving:</b><br> Entree tot museum inclusief een groepstour</p>
-        </div>
-                <div class="buttons">
-                    <label for="drop">Aantal</label>
-                    <button id="prev" onclick="selectPrev()"><i class="fa fa-minus" aria-hidden="true"></i>
-                    </button>
-                    <select id="drop">
-                        <option>0</option>
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                        <option>6+</option>
-                    </select>
-                    <button id="next" onclick="selectNext()"><i class="fa fa-plus" aria-hidden="true"></i>
-                    </button>
+<main>
+    <form action="/test" class="selectTour" id="ticketForm">
+        <input type="radio" id="entrance" name="typeOfTicket" value="Slecht entree" checked>
+        <label for="entrance" tabindex="0" id="entranceLabel">
+                <img src="/images/1.jpg">
+                <div class="content">
+                    <h2>Enkel entree</h2>
+                    <hr>
+                    <p><b>Omschrijving:</b><br> Slechts entree tot het museum</p>
                 </div>
-    </article>
-    <article>
-        <img src="/images/3.jpg">
-        <div class="content">
-            <h2>Privé tour</h2>
-            <hr>
-            <p><b>Omschrijving:</b><br> Entree tot museum inclusief een privé tour</p>
-        </div>
-                <div class="buttons">
-                    <label for="drop">Aantal</label>
-                    <button id="prev" onclick="selectPrev()"><i class="fa fa-minus" aria-hidden="true"></i>
-                    </button>
-                    <select id="drop">
-                        <option>0</option>
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                        <option>6+</option>
-                    </select>
-                    <button id="next" onclick="selectNext()"><i class="fa fa-plus" aria-hidden="true"></i>
-                    </button>
                 </div>
-    </article>
-    <!-- <article>
-        <img src="/images/3.jpg">
-        <div class="content">
-            <h2>Expositie 1</h2>
-            <hr>
-            <p><b>Omschrijving:</b><br> Entree tot museum inclusief een expositie 2</p>
-        </div>
-                <div class="buttons">
-                    <label for="drop">Aantal</label>
-                    <button id="prev" onclick="selectPrev()"><i class="fa fa-minus" aria-hidden="true"></i>
-                    </button>
-                    <select id="drop">
-                        <option>0</option>
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                        <option>6+</option>
-                    </select>
-                    <button id="next" onclick="selectNext()"><i class="fa fa-plus" aria-hidden="true"></i>
-                    </button>
+
+        </label>
+        <input type="radio" id="tour1" name="typeOfTicket" value="Groepstour">
+        <label for="tour1" tabindex="0" id="tour1Label">
+                <img src="/images/2.jpg">
+                <div class="content">
+                    <h2>Groepstour</h2>
+                    <hr>
+                    <p><b>Omschrijving:</b><br> Entree tot museum inclusief een groepstour</p>
                 </div>
-    </article>
-    <article>
-        <img src="/images/3.jpg">
-        <div class="content">
-            <h2>Expositie 2</h2>
-            <hr>
-            <p><b>Omschrijving:</b><br> Entree tot museum inclusief een expositie 2</p>
-        </div>
-                <div class="buttons">
-                    <label for="drop">Aantal</label>
-                    <button id="prev" onclick="selectPrev()"><i class="fa fa-minus" aria-hidden="true"></i>
-                    </button>
-                    <select id="drop">
-                        <option>0</option>
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                        <option>6+</option>
-                    </select>
-                    <button id="next" onclick="selectNext()"><i class="fa fa-plus" aria-hidden="true"></i>
-                    </button>
+        </label>
+        <input type="radio" id="tour2" name="typeOfTicket" value="Privé tour">
+        <label for="tour2" tabindex="0"  id="tour2Label">
+                <img src="/images/3.jpg">
+                <div class="content">
+                    <h2>Privé tour</h2>
+                    <hr>
+                    <p><b>Omschrijving:</b><br> Entree tot museum inclusief een privé tour</p>
                 </div>
-        </div>
-    </article> -->
+        </label>
+    </form>
 </main>
-<script>
-   ticketAmount = localStorage.getItem("ticketAmount");
-   console.log(ticketAmount)
-   document.getElementById("amount").innerHTML = ticketAmount;
- 
-</script>
+<script src="/js/tours.js"></script>
 <%- include('partials/bottomNav') %>
 <%- include('partials/footer') %>
-
-
-<!-- <p> <a class="button" href="datum">Nee</a> </p>
-<p> <a class="button" href="datum">Groepstour</a> </p>
-<p> <a class="button" href="datum">Privé tour</a> </p>
-<p> <a class="button" href="datum">Expositie 1</a> </p>
-<p> <a class="button" href="datum">Expositie 2</a> </p>
-<p> <a class="button" href="datum">Expositie 3</a> </p> -->
