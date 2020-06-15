@@ -86,7 +86,7 @@
 }
 
 .ticketCheckBox input[type=checkbox]:focus{
-    border: 2px solid var(--succes);
+    outline: 1px solid var(--succes);
 }
   
   .ticketCheckBox label{
