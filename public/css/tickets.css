@@ -10,7 +10,6 @@
     display: none;
     height: 0;
     background-color: var(--main-white);
-    border-top: 2px solid #000;
 }
 .ticket {
     border-top: 2px solid #000;
@@ -68,11 +67,28 @@
     width: 100%;
 }
 
-.tickets #standardTickets, .tickets #discountTickets{
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
+.ticketHeader{
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0;
+    padding: .5em 0;
+    background-color: var(--business-blue);
 }
+.ticketCheckBox{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1em;
+  }
+
+  .ticketCheckBox input[type=checkbox] {
+    transform: scale(1.5);
+}
+  
+  .ticketCheckBox label{
+    width: 100%;
+  }
+
 
 .tickets a {
     text-decoration: navajowhite;
