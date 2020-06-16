@@ -21,6 +21,13 @@ module.exports = function (app) {
         })
     })
 
+    app.get('/rembrandt', (req, res) => {
+        res.render('rembrandt', {
+            title: 'Rijksmuseum | Rembrandt',
+            nextPage: '/'
+        })
+    })
+
 
     app.get('/tickets', (req, res) => {
         res.render('ticket', {
@@ -39,6 +46,21 @@ module.exports = function (app) {
         res.render('ticketkeuze', {
             title: 'Rijksmuseum | Tickets',
             nextPage: 'tours',
+        })
+    })
+
+    app.get('/ticketkeuze_rembrandt', (req, res) => {
+        res.render('ticketkeuze_rembrandt', {
+            title: 'Rijksmuseum | Tickets',
+            nextPage: 'tours',
+        })
+    })
+
+    app.get('/date_rembrandt', (req, res) => {
+        res.render('date_rembrandt', {
+            title: 'Rijksmuseum | test',
+            selectedDay: "Vandaag",
+            nextPage: 'gegevens',
         })
     })
 
