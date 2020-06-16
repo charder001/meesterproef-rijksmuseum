@@ -35,11 +35,6 @@ module.exports = function (app) {
         })
     })
 
-    app.get('/datum2', (req, res) => {
-        res.render('datum2', {
-            title: 'Rijksmuseum | Tickets'
-        })
-    })
 
 
     app.get('/ticketkeuze', (req, res) => {
@@ -72,12 +67,6 @@ module.exports = function (app) {
 
 
 
-    app.get('/datum', (req, res) => {
-        res.render('datum', {
-            title: 'Rijksmuseum | Datum',
-            nextPage: 'gegevens',
-        })
-    })
     
     app.get('/overzicht', (req, res) => {
         res.render('overzicht', {
