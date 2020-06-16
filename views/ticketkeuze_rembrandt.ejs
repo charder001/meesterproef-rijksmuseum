@@ -1,0 +1,171 @@
+<%- include('partials/head') %>
+
+<div class="banner">
+    <h1>Kies uw tickets</h1>
+</div>
+<nav id="breadcrumbs">
+    <a href="/">home</a>
+    <span>> </span>
+    <a href="/rembrandt">rembrandt</a>
+    <span>> </span>
+    <a href="/ticketkeuze_rembrandt">tickets</a>
+</nav>
+<main>
+    <article>
+    </article>
+    <section class="tickets">
+        <div class="ticketCheckBox">
+            <label for="vehicle1">Heb je een kortingspas?</label>
+            <input id="discountTickets" type="checkbox" name="korting">
+        </div>
+        <h2 class="ticketHeader">Tickets</h2>
+        <article class="ticketContent active" id="content1">
+            <div class="ticket">
+                <div class="ticketDescription">
+                    <p> Entree volwassene <span> 19,-</span> </p>
+                </div>
+                <div class="buttons">
+                    <button tabindex="-1" id="prev" onclick="selectPrev()"><i class="fa fa-minus"
+                            aria-hidden="true"></i>
+                    </button>
+                    <select id="drop1" class="ticketAmount">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                    <button tabindex="-1" id="next" onclick="selectNext()"><i class="fa fa-plus" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="ticket">
+                <div class="ticketDescription">
+                    <p> Entree t/m 18 jaar <span> Gratis</span> </p>
+                </div>
+                <div class="buttons">
+                    <button tabindex="-1" id="prev" onclick="selectPrev()"><i class="fa fa-minus"
+                            aria-hidden="true"></i>
+                    </button>
+                    <select id="drop2" class="ticketAmount">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>>
+                    </select>
+                    <button tabindex="-1" id="next" onclick="selectNext()"><i class="fa fa-plus" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+
+
+        </article>
+        <article class="ticketContent" id="content2">
+            <div class="ticket">
+                <div class="ticketDescription">
+                    <p> Entree CJP pas <span> 9,50,-</span> </p>
+                </div>
+                <div class="buttons">
+                    <button tabindex="-1" id="prev" onclick="selectPrev()"><i class="fa fa-minus"
+                            aria-hidden="true"></i>
+                    </button>
+                    <select id="drop3" class="ticketAmount">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                    <button tabindex="-1" id="next" onclick="selectNext()"><i class="fa fa-plus" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="ticket">
+                <div class="ticketDescription">
+                    <p> Entree BankGiro Loterij VIP-kaart <span> Gratis</span> </p>
+                </div>
+                <div class="buttons">
+                    <button tabindex="-1" id="prev" onclick="selectPrev()"><i class="fa fa-minus"
+                            aria-hidden="true"></i>
+                    </button>
+                    <select id="drop4" class="ticketAmount">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                    <button tabindex="-1" id="next" onclick="selectNext()"><i class="fa fa-plus" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="ticket">
+                <div class="ticketDescription">
+                    <p> Entree Museumkaart <span> Gratis</span> </p>
+                </div>
+                <div class="buttons">
+                    <button tabindex="-1" id="prev" onclick="selectPrev()"><i class="fa fa-minus"
+                            aria-hidden="true"></i>
+                    </button>
+                    <select id="drop5" class="ticketAmount">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                    <button tabindex="-1" id="next" onclick="selectNext()"><i class="fa fa-plus" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="ticket">
+                <div class="ticketDescription">
+                    <p> Ander geldig toegangsbewijs <span> Gratis</span> </p>
+                </div>
+                <div class="buttons">
+                    <button tabindex="-1" id="prev" onclick="selectPrev()"><i class="fa fa-minus"
+                            aria-hidden="true"></i>
+                    </button>
+                    <select id="drop6" class="ticketAmount">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                    <button tabindex="-1" id="next" onclick="selectNext()"><i class="fa fa-plus" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+        </article>
+        <h2 id="totalTickets">Totaal aantal tickets: 0</h2>
+
+    </section>
+
+    </section>
+
+
+</main>
+
+<nav id="bottomnav">
+    <a href="test" class="button" id="next"> Volgende</a>
+</nav>
+
+
+<script src="/js/ticket.js"></script>
+
+<%- include('partials/footer') %>
