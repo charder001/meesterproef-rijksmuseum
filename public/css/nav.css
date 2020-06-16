@@ -23,9 +23,6 @@ nav {
     text-decoration: none;
 }
 
-nav a:focus, nav a:hover{
-  color: var(--succes);
-}
 #bottomnav {
   bottom: 0;
   top: unset;

@@ -14,20 +14,33 @@
     --error: #E52526;
   }
 
-  body{
-    font-family: 'Oswald', sans-serif;
-    background-color: var(--wilmotte-blue);
+  body {
+    font-family: Oswald,sans-serif;
+    background-color: var(--light-grey);
     margin: 0;
     padding: 0;
-    margin-bottom: 100px;
-  }
+    min-height: 100vh;
+}
 
-  h1, h2, h3 {
-    color: var(--main-white);
+  h1, h2 {
+    color: var(--main-black);
+    font-size: 2em;
   }
-  main {
-    padding: 0 5em;
-    margin-top: 3em;
+  .section1, .section2 {
+    padding: 4em 5em;
+    color: var(--main-black);
+}
+
+.home .section2 .homeTours{
+  display: flex;
+  justify-content: space-evenly;
+}
+.section1{
+  background-color: var(--main-white);
+
+}
+.section2{
+  background-color: var(--light-grey);
 }
 
 
@@ -36,7 +49,6 @@ article{
 }
 
 article p{
-  color: var(--main-white);
   font-weight: 300;
   font-size: 1.2em;
   margin: 2em 0;
@@ -47,14 +59,13 @@ article p{
   font-size: 1.2em;
   text-decoration: none;
   color: var(--main-white);
-  background-color: var(--main-dark-grey);
+  background-color: var(--business-blue);
   border-bottom: 2px solid var(--main-white);
   box-shadow: 0 7px 37px -3px rgba(0,0,0,.38);
   border-left: 2px solid var(--main-white);
 }
-
-#logo:hover,.button:hover, .button:focus{
-  border-color: var(--succes)
+.button:hover{
+  box-shadow: 0 10px 45px -5px rgba(0,0,0,.90);
 }
 
 #logo{
@@ -92,10 +103,12 @@ article p{
 }
 
 .homeItem {
-  width: 20em;
-  background-color: white;
-  height: 25em;
+  background-color: #fff;
   padding: .5em;
+  margin: 0 1em;
+  width: calc(33.3333% - 2em);
+  padding-bottom: 4em;
+  position:  relative;
 }
 
 .homeItemImage {
@@ -109,9 +122,8 @@ article p{
 }
 
 .homeItem a {
-  position: relative;
-left: 11em;
-bottom: 0em;
+  position: absolute;
+  bottom: 1em;
 }
 
 .homeItem p {
@@ -129,4 +141,11 @@ bottom: 0em;
   justify-content: center;
 }
 
+.section1 li{
+  color: var(--main-black);
+}
 
+*:focus{
+  color: var(--succes);
+  border-bottom: 2px solid var(--succes);
+}

@@ -3,11 +3,6 @@ form .button {
     margin: 1em 0;
 }
 
-label{
-    color: var(--main-white);
-  }
-
-
 #age {
     font-size: 10em;
     width: 3em;
