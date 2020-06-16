@@ -37,7 +37,19 @@
           </form> 
     </article>
 </main>
+<script>
+    let formName = document.getElementById("fname");
+    let formEmail = document.getElementById("email");
+    let formAgree = document.getElementById("agreement");
 
+   formAgree.addEventListener("click", setLocalStorage); 
+
+    function setLocalStorage(){
+        localStorage.setItem('fname', formName.value);
+        localStorage.setItem('email', formEmail.value);
+        console.log(localStorage)
+    };
+</script>
 <%- include('partials/bottomnav') %>
 
 

@@ -174,9 +174,19 @@
     background-color: var(--light-grey);
 }
 
-.selectTour h2{
-    color: var(--main-black)
+.selectTour h2 {
+    text-align: center;
+    background-color: var(--main-dark-grey);
+    top: 0;
+    position: absolute;
+    color: white;
+    padding: .2em;
+    left: 0;
+    width: 80%;
+    box-sizing: border-box;
+    margin: 0;
 }
+
 .selectTour input{
     display: none;
 }

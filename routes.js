@@ -17,7 +17,7 @@ module.exports = function (app) {
     app.get('/gegevens', (req, res) => {
         res.render('gegevens', {
             title: 'Rijksmuseum | Persoonsgegevens',
-            nextPage: '/'
+            nextPage: 'overzicht'
         })
     })
 
@@ -74,7 +74,21 @@ module.exports = function (app) {
 
     app.get('/datum', (req, res) => {
         res.render('datum', {
-            title: 'Rijksmuseum | datum',
+            title: 'Rijksmuseum | Datum',
+            nextPage: 'gegevens',
+        })
+    })
+    
+    app.get('/overzicht', (req, res) => {
+        res.render('overzicht', {
+            title: 'Rijksmuseum | Overzicht bestelling',
+            nextPage: 'home',
+        })
+    })
+
+    app.get('/datum', (req, res) => {
+        res.render('datum', {
+            title: 'Rijksmuseum | test',
             selectedDay: "Vandaag",
             nextPage: 'gegevens',
         })
