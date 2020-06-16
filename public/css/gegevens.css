@@ -1,0 +1,28 @@
+/* #gegevens input {
+    display: block;
+} */
+
+#gegevens label {
+    display: block;
+}
+
+#gegevens .nameInput {
+    display: inline;
+}
+
+/* #agreement{
+    display: block;
+} */
+
+#gegevens [for=agreement]{
+    display: inline;
+}
+
+input {
+    margin-bottom: 1.5em;
+}
+
+[name=tussen]{
+    width: 7em;
+}
+

@@ -16,7 +16,8 @@ module.exports = function (app) {
 
     app.get('/gegevens', (req, res) => {
         res.render('gegevens', {
-            title: 'Rijksmuseum | Persoonsgegevens'
+            title: 'Rijksmuseum | Persoonsgegevens',
+            nextPage: '/'
         })
     })
 
