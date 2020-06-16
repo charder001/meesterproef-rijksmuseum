@@ -10,7 +10,7 @@ module.exports = function (app) {
     app.get('/tours', (req, res) => {
         res.render('tours', {
             title: 'Rijksmuseum | Tours',
-            nextPage: 'test',
+            nextPage: 'datum',
         })
     })
 
@@ -58,7 +58,7 @@ module.exports = function (app) {
 
     app.get('/date_rembrandt', (req, res) => {
         res.render('date_rembrandt', {
-            title: 'Rijksmuseum | test',
+            title: 'Rijksmuseum | datum',
             selectedDay: "Vandaag",
             nextPage: 'gegevens',
         })
@@ -70,21 +70,16 @@ module.exports = function (app) {
         })
     })
 
+
+
     app.get('/datum', (req, res) => {
         res.render('datum', {
-            title: 'Rijksmuseum | Datum',
-            nextPage: 'gegevens',
-        })
-    })
-
-    app.get('/test', (req, res) => {
-        res.render('test', {
-            title: 'Rijksmuseum | test',
+            title: 'Rijksmuseum | datum',
             selectedDay: "Vandaag",
             nextPage: 'gegevens',
         })
     })
-    app.post('/test', (req, res) => {
+    app.post('/datum', (req, res) => {
         //vertaling morgen
         var morgenParser = new chrono.Parser();
         // Provide search pattern
@@ -132,7 +127,7 @@ module.exports = function (app) {
         var sortedData = cleanData[0] + " " + cleanData[2] + " " + cleanData[1] + " " + cleanData[3]
 
         res.render('time', {
-            title: 'Rijksmuseum | test',
+            title: 'Rijksmuseum | datum',
             nextPage: 'gegevens',
             months: req.body.flexDateField,
             selectedDay: sortedData
@@ -148,8 +143,8 @@ module.exports = function (app) {
     })
 
     app.post('/selectedDate', (req, res) => {
-        res.render('test', {
-            title: 'Rijksmuseum | test'
+        res.render('datum', {
+            title: 'Rijksmuseum | datum'
         })
     })
 }
