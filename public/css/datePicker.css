@@ -216,15 +216,6 @@ main .active {
   opacity: 1 !important;
 }
 
-.datepicker #flexDateSubmit {
-  margin-top: .2em;
-  font-size: 1.2em;
-  text-decoration: none;
-  color: var(--main-white);
-  background-color: var(--main-dark-grey);
-  border: 2px solid var(--orange-red);
-  box-shadow: 0px 7px 37px -3px rgba(0,0,0,0.38);
-}
 
 .datepicker p {
   color: white;
