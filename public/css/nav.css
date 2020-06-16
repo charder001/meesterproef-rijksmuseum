@@ -52,3 +52,8 @@ nav a:focus, nav a:hover{
 .skip-to-content-link:focus {
   transform: translateY(0%);
 }
+
+#breadcrumbs {
+  display: block;
+  position: static;
+}

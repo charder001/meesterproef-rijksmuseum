@@ -3,36 +3,45 @@
 <div class="banner">
     <h1>Wat voor soort ticket(s) wil je?</h1>
 </div>
+
+<nav id="breadcrumbs">
+    <a href="/">home</a>
+    <span>> </span>
+    <a href="/ticketkeuze">tickets</a>
+    <span>> </span>
+    <a href="/ticketkeuze">tours</a>
+</nav>
+
 <main>
     <form action="/test" class="selectTour" id="ticketForm">
         <input type="radio" id="entrance" name="typeOfTicket" value="Slecht entree" checked>
         <label for="entrance" tabindex="0" id="entranceLabel">
-                <img src="/images/1.jpg">
-                <div class="content">
-                    <h2>Enkel entree</h2>
-                    <hr>
-                    <p><b>Omschrijving:</b><br> Slechts entree tot het museum</p>
-                </div>
-                </div>
+            <img src="/images/1.jpg">
+            <div class="content">
+                <h2>Enkel entree</h2>
+                <hr>
+                <p><b>Omschrijving:</b><br> Slechts entree tot het museum</p>
+            </div>
+            </div>
 
         </label>
         <input type="radio" id="tour1" name="typeOfTicket" value="Groepstour">
         <label for="tour1" tabindex="0" id="tour1Label">
-                <img src="/images/2.jpg">
-                <div class="content">
-                    <h2>Groepstour</h2>
-                    <hr>
-                    <p><b>Omschrijving:</b><br> Entree tot museum inclusief een groepstour</p>
-                </div>
+            <img src="/images/2.jpg">
+            <div class="content">
+                <h2>Groepstour</h2>
+                <hr>
+                <p><b>Omschrijving:</b><br> Entree tot museum inclusief een groepstour</p>
+            </div>
         </label>
         <input type="radio" id="tour2" name="typeOfTicket" value="Privé tour">
-        <label for="tour2" tabindex="0"  id="tour2Label">
-                <img src="/images/3.jpg">
-                <div class="content">
-                    <h2>Privé tour</h2>
-                    <hr>
-                    <p><b>Omschrijving:</b><br> Entree tot museum inclusief een privé tour</p>
-                </div>
+        <label for="tour2" tabindex="0" id="tour2Label">
+            <img src="/images/3.jpg">
+            <div class="content">
+                <h2>Privé tour</h2>
+                <hr>
+                <p><b>Omschrijving:</b><br> Entree tot museum inclusief een privé tour</p>
+            </div>
         </label>
     </form>
 </main>
