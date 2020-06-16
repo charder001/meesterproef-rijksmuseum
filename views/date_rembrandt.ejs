@@ -4,16 +4,6 @@
     <h1>Beschikbare tickets</h1>
 </div>
 
-<nav id="breadcrumbs">
-    <a href="/">home</a>
-    <span>> </span>
-    <a href="/rembrandt">rembrandt</a>
-    <span>> </span>
-    <a href="/ticketkeuze_rembrandt">tickets</a>
-    <span>> </span>
-    <a href="/ticketkeuze">datum/tijd</a>
-</nav>
-
 <main>
     <h3>Prik een gewenste datum voor het bezoek</h3>
     <h3 id="selectedDay">Je geselecteerde datum is: <%= selectedDay %></h3>
@@ -325,4 +315,13 @@
 <script src="/js/datePicker.js"></script>
 <script src="/js/test.js"></script>
 <%- include('partials/bottomNav') %>
+<nav id="breadCrumbs">
+    <a href="/">home</a>
+    <span>> </span>
+    <a href="/rembrandt">rembrandt</a>
+    <span>> </span>
+    <a href="/ticketkeuze_rembrandt">tickets</a>
+    <span>> </span>
+    <a href="/ticketkeuze">datum/tijd</a>
+</nav>
 <%- include('partials/footer') %>

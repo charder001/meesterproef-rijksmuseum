@@ -4,14 +4,6 @@
     <h1>Wat voor soort ticket(s) wil je?</h1>
 </div>
 
-<nav id="breadcrumbs">
-    <a href="/">home</a>
-    <span>> </span>
-    <a href="/ticketkeuze">tickets</a>
-    <span>> </span>
-    <a href="/ticketkeuze">tours</a>
-</nav>
-
 <main>
     <form action="/datum" class="selectTour" id="ticketForm">
         <input type="radio" id="entrance" name="typeOfTicket" value="Slecht entree" checked>
@@ -47,4 +39,11 @@
 </main>
 <script src="/js/tours.js"></script>
 <%- include('partials/bottomNav') %>
+    <nav id="breadCrumbs">
+        <a href="/">home</a>
+        <span>> </span>
+        <a href="/ticketkeuze">tickets</a>
+        <span>> </span>
+        <a href="/ticketkeuze">tours</a>
+    </nav>
 <%- include('partials/footer') %>

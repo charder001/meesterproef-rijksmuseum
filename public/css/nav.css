@@ -51,7 +51,14 @@ nav a:focus, nav a:hover{
   transform: translateY(0%);
 }
 
-#breadcrumbs {
+#breadCrumbs {
   display: block;
-  position: static;
+  position: fixed;
+  bottom: 8px;
+  top: unset;
+  z-index: 1;
+}
+
+#breadCrumbs a{
+  color: var(--main-black);
 }
