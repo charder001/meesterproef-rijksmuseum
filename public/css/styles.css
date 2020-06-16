@@ -73,6 +73,14 @@ article p{
   align-items: center;
 }
 
+#tours {
+  margin-top: 5em;
+}
+
+#tours h2{
+  text-align: center;
+}
+
 .rembrandtbanner {
   width: 100%;
   background-size: cover;
@@ -85,9 +93,9 @@ article p{
 
 .homeItem {
   width: 20em;
-  margin-top: 5em;
   background-color: white;
-  height: 20em;
+  height: 25em;
+  padding: .5em;
 }
 
 .homeItemImage {
@@ -96,10 +104,14 @@ article p{
   object-fit: cover;
 }
 
+.homeItem h3 {
+  color: black;
+}
+
 .homeItem a {
   position: relative;
 left: 11em;
-bottom: 1em;
+bottom: 0em;
 }
 
 .homeItem p {
