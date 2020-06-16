@@ -34,9 +34,7 @@ nav a:focus, nav a:hover{
   box-sizing: border-box;
   background-color: var(--main-white);
   padding: .5em;
-}
-#bottomnav a {
-  align-self: end;
+  align-items: flex-end;
 }
 
 .skip-to-content-link {
