@@ -26,3 +26,15 @@ input {
     width: 7em;
 }
 
+.gegevens input{
+    padding: 1em;
+    border: 2px solid var(--main-black);
+}
+
+#agreement:focus{
+    outline: 2px solid var(--succes);
+}
+
+.gegevens input:focus{
+    border-color: var(--succes);
+}
