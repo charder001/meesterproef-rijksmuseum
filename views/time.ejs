@@ -4,7 +4,7 @@
     <h1 tabindex="0">Beschikbare tickets</h1>
 </div>
 <main>
-    <h3 id="selectedDay">Je geselecteerde datum is: <%= selectedDay %></h3>
+    <h3 id="selectedDay">Je geselecteerde datum is: <span id="pickedDate"><%= selectedDay %></span></h3>
     <div id="myDatepicker" class="datepicker">
         <div class="date">
             <form action="/datum" id="flexDateForm" method="post">
@@ -334,6 +334,7 @@
 </main>
 
 <!-- <script src="js/ticket2.js"> </script> -->
+<script src="/js/time.js"></script>
 <script src="/js/datePicker.js"></script>
 <script src="/js/test.js"></script>
 <%- include('partials/bottomNav') %>

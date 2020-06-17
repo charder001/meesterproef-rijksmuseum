@@ -3,8 +3,6 @@ var middag = document.querySelector("#middag")
 var morningSelect = document.querySelector("#morningSelect")
 var afternoonSelect = document.querySelector("#afternoonSelect")
 
-console.log(localStorage)
-
 ochtend.addEventListener("click", function () {
     afternoonSelect.classList.add("hidden")
     morningSelect.classList.remove("hidden")
@@ -14,3 +12,8 @@ middag.addEventListener("click", function () {
     morningSelect.classList.add("hidden")
     afternoonSelect.classList.remove("hidden")
 })
+
+
+
+let pickedDate = document.getElementById("pickedDate");
+console.log(pickedDate)
