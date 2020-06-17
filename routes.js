@@ -83,6 +83,25 @@ module.exports = function (app) {
         })
     })
     app.post('/datum', (req, res) => {
+
+        //vertaling vandaag
+        var vandaagParser = new chrono.Parser();
+        // Provide search pattern
+        vandaagParser.pattern = function () {
+            return /vandaag/;
+        };
+
+        // This function will be called when matched pattern is found
+        vandaagParser.extract = function (text, ref, match, opt) {
+
+            // Return a parsed result, that is 25 December
+            return new chrono.ParsedResult({
+                ref: chrono.parseDate('today'),
+                text: match[0],
+                index: match.index,
+            });
+        };
+
         //vertaling morgen
         var morgenParser = new chrono.Parser();
         // Provide search pattern
@@ -121,15 +140,17 @@ module.exports = function (app) {
 
         //push custom parsers naar chrono
         var custom = new chrono.Chrono();
+        custom.parsers.push(vandaagParser);
         custom.parsers.push(morgenParser);
         custom.parsers.push(volgendeWeekParser);
+
 
         var rawData = custom.parseDate(req.body.flexDateField)
         var stringData = String(rawData)
         var cleanData = stringData.split(" ")
         var sortedData = cleanData[0] + " " + cleanData[2] + " " + cleanData[1] + " " + cleanData[3]
 
-        res.render('time', {
+        res.render('datum', {
             title: 'Rijksmuseum | datum',
             nextPage: 'gegevens',
             months: req.body.flexDateField,

@@ -8,21 +8,27 @@
 <main>
     <section class="section1">
         <h3>Prik een gewenste datum voor het bezoek</h3>
-        <h3 id="selectedDay">Je geselecteerde datum is: <%= selectedDay %></h3>
+        
         <div id="myDatepicker" class="datepicker">
             <div class="date">
                 <form action="/datum" id="flexDateForm" method="post">
                     <label for="flexDateField">Datum</label>
-                    <input type="text" placeholder="Morgen, volgende week, etc." name="flexDateField" id="flexDateField"
-                        aria-autocomplete="none">
-
-                    <button class="calendarButton button" aria-label="Choose Date" autofocus>
+    
+                    <button class="calendarButton button" aria-label="Choose Date">
                         <!-- <span class="fa fa-calendar-alt fa-2x"></span> -->
                         <img id="calendarImg" src="images/calendar.png">
                     </button>
                     <br>
+                    <input type="text" value="vandaag" name="flexDateField" id="flexDateField"
+                    aria-autocomplete="none">
+                    <br>
 
-                    <input class="button" id="flexDateSubmit" type="submit" value="kies datum">
+                <input class="button" id="flexDateSubmit" type="submit" value="kies datum">
+                    <h3 id="selectedDay">Je geselecteerde datum is: <%= selectedDay %></h3>
+                    <p>De geselecteerde dag en ticket combinatie is niet beschikbaar</p>
+                    <a href="">Kies eerstvolgende beschikbare datum: 21/06/2020</a>
+                    <br>
+
                 </form>
             </div>
             <div id="id-datepicker-1" class="datepickerDialog" role="dialog" aria-modal="true"
@@ -318,7 +324,9 @@
 
             <input type="radio" name="period" id="middag" class="periodSelect">
             <label for="middag">Middag</label>
-            <select id="morningSelect" class="hidden">
+            <div id="morningSelect" class="hidden">
+            <h3>Kies uit een van de volgende beschikbare tijden</h3>
+            <select>
                 <option>09:00</option>
                 <option>09:30</option>
                 <option>10:00</option>
@@ -326,7 +334,10 @@
                 <option>11:00</option>
                 <option>11:30</option>
             </select>
-            <select id="afternoonSelect" class="hidden">
+        </div>
+        <div  id="afternoonSelect" class="hidden">
+            <h3>Kies uit een van de volgende beschikbare tijden</h3>
+            <select>
                 <option>12:00</option>
                 <option>12:30</option>
                 <option>13:00</option>
@@ -335,6 +346,7 @@
                 <option>14:30</option>
                 <option>15:00</option>
             </select>
+            </div>
         </form>
     </section>
 </main>
