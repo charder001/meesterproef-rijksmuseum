@@ -10,6 +10,8 @@ inputId.addEventListener("input", setLocalStorage);
 inputId2.addEventListener("input", setLocalStorage);
 inputId3.addEventListener("input", setLocalStorage);
 
+setLocalStorage();
+
 input.addEventListener("keyup", function(event) {
 if (event.keyCode === 13) {
     event.preventDefault();
