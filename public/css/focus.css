@@ -31,3 +31,10 @@
     border-color: var(--succes);
 }
 
+#timeForm input:focus {
+  outline: 2px solid var(--succes);
+}
+
+#timeForm select:focus {
+  outline: 2px solid var(--succes);
+}
