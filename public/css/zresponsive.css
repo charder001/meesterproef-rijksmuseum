@@ -1,0 +1,57 @@
+@media (max-width:1200px) {
+    .home .section2 {
+        padding: 2em 1em;
+    }
+    .selectTour {
+        width: 100%;
+    }
+}
+
+@media (max-width:991px) {
+    .home .section2 .homeTours {
+        flex-wrap: wrap;
+    }
+    .home .homeItem {
+        width: calc(50% - 2em);
+        box-sizing: border-box;
+        margin: 1em 1em;
+    }
+    .selectTour label {
+        width: calc(50% - 4em);
+        margin: 2em;
+    }
+}
+
+@media (max-width:770px) {
+    .home .homeItem {
+        width: calc(100% - 2em);
+    }
+    .section2 .ticketTable{
+        width: 100%;
+    }
+    .tickets .section2 {
+        padding: 4em 1em;
+    }
+    .tours .section1{
+        padding: 2em 1em;
+    }
+}
+
+@media (max-width:550px) {
+    h1, h2 {
+        font-size: 1.2m;
+    }
+    .banner h1 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+    .section1, .section2 {
+        padding: 2em 2em;
+    }
+    .tickets .section2 {
+        padding: 2em .2em;
+    }
+    .selectTour label {
+        width: calc(100% - 4em);
+    }
+}

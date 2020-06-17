@@ -2,7 +2,7 @@ nav {
   display: flex;
   align-items: center;
   padding: .5em;
-  position: fixed;
+  position: absolute;
   top: 0;
 }
   
@@ -32,6 +32,7 @@ nav {
   background-color: var(--main-white);
   padding: .5em;
   align-items: flex-end;
+  position: fixed;
 }
 
 .skip-to-content-link {
