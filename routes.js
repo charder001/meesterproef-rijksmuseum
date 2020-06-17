@@ -52,7 +52,7 @@ module.exports = function (app) {
     app.get('/ticketkeuze_rembrandt', (req, res) => {
         res.render('ticketkeuze_rembrandt', {
             title: 'Rijksmuseum | Tickets',
-            nextPage: 'tours',
+            nextPage: 'date_rembrandt',
         })
     })
 
