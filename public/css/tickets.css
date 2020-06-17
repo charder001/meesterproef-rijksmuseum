@@ -101,10 +101,6 @@
   .ticketCheckBox input[type=checkbox] {
     transform: scale(1.5);
 }
-
-.ticketCheckBox input[type=checkbox]:focus{
-    outline: 1px solid var(--succes);
-}
   
   .ticketCheckBox label{
     width: 100%;

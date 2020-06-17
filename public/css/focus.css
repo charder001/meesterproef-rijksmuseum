@@ -1,0 +1,24 @@
+.button:focus{
+    background-color: var(--succes);
+    box-shadow: 0 10px 45px -5px rgba(0,0,0,.90);
+  }
+  .button:hover{
+    background-color: var(--succes);
+    box-shadow: 0 10px 45px -5px rgba(0,0,0,.90);
+  }
+  *:focus{
+    outline: none;
+  }
+  nav a:focus #logo{
+    border-color: var(--succes);
+  }
+  .ticketCheckBox input[type=checkbox]:focus{
+    outline: 2px solid var(--succes);
+}
+.tickets .section2 p:focus, h2:focus, #breadCrumbs a:focus, #breadCrumbs a:hover{
+    color: var(--succes);
+}
+
+.selectTour label:focus, input[type="radio"]:checked + label h2{
+    background-color: var(--succes);;
+}
