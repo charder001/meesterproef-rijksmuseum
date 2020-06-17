@@ -224,3 +224,7 @@ main .active {
 #calendarImg {
   max-width: 2em;
 }
+
+#unavailable {
+  color: var(--error);
+}
