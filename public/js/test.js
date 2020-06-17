@@ -9,18 +9,20 @@ document.getElementById("flexDateField").addEventListener("keydown", function(ev
     }
     });
 
-var ochtend = document.querySelector("#ochtend")
-var middag = document.querySelector("#middag")
+
 var morningSelect = document.querySelector("#morningSelect")
 var afternoonSelect = document.querySelector("#afternoonSelect")
 
-ochtend.addEventListener("click", function () {
-    afternoonSelect.classList.add("hidden")
-    morningSelect.classList.remove("hidden")
-})
 
-middag.addEventListener("click", function () {
-    morningSelect.classList.add("hidden")
-    afternoonSelect.classList.remove("hidden")
-})
 
+
+let slides = document.getElementsByClassName("dateButton");
+for (let i = 0; i < slides.length; i++) {
+   chance = Math.floor(Math.random() * 100);
+    if (chance > 80){
+        console.log('Niet beschikbaar')
+        slides[i].innerHTML="kaas";
+    }else{
+        console.log('beschikbaar')
+    }
+}
