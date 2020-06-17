@@ -1,3 +1,14 @@
+window.location.hash = '#selectedDay';
+
+
+document.getElementById("flexDateField").addEventListener("keydown", function(event) {
+    if (event.keyCode === 13) {
+        console.log("plop")
+        event.preventDefault();
+        document.getElementById("flexDateSubmit").click();
+    }
+    });
+
 var ochtend = document.querySelector("#ochtend")
 var middag = document.querySelector("#middag")
 var morningSelect = document.querySelector("#morningSelect")
@@ -13,4 +24,3 @@ middag.addEventListener("click", function () {
     afternoonSelect.classList.remove("hidden")
 })
 
-window.location.hash = '#selectedDay';
