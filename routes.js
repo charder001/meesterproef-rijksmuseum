@@ -72,7 +72,7 @@ module.exports = function (app) {
 
 
 
-    
+
     app.get('/overzicht', (req, res) => {
         res.render('overzicht', {
             title: 'Rijksmuseum | Overzicht bestelling',
@@ -155,7 +155,7 @@ module.exports = function (app) {
         var cleanData = stringData.split(" ")
         var sortedData = cleanData[0] + " " + cleanData[2] + " " + cleanData[1] + " " + cleanData[3]
 
-        res.render('datum', {
+        res.render('time', {
             title: 'Rijksmuseum | datum',
             nextPage: 'gegevens',
             months: req.body.flexDateField,

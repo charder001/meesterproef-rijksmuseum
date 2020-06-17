@@ -13,7 +13,3 @@ middag.addEventListener("click", function () {
     afternoonSelect.classList.remove("hidden")
 })
 
-
-
-let pickedDate = document.getElementById("pickedDate");
-console.log(pickedDate)
