@@ -14,3 +14,5 @@ middag.addEventListener("click", function () {
     morningSelect.classList.add("hidden")
     afternoonSelect.classList.remove("hidden")
 })
+
+window.location.hash = '#selectedDay';
