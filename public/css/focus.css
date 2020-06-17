@@ -22,8 +22,12 @@
 .selectTour label:focus, input[type="radio"]:checked + label h2{
     background-color: var(--succes);
 }
-
-.overzicht ul:focus{
+#flexDateField{
+  border: 2px solid var(--main-black);
+  padding: 1em;
+  margin-top: 1em;
+}
+.overzicht ul:focus, #flexDateField:focus{
     border-color: var(--succes);
 }
 
