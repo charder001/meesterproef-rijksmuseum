@@ -29,3 +29,15 @@
   .extras label h3 {
       color: var(--main-black);
   }
+
+  .extra .section2 form {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+.extra .section2 form select{
+    margin: auto;
+    margin-bottom: 2em;
+    margin-top: .5em;
+}

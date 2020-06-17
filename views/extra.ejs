@@ -1,0 +1,71 @@
+<%- include('partials/head') %>
+
+<div class="banner">
+    <h1 tabindex="0">Extra's voor je bezoek</h1>
+</div>
+<main class="extra">
+    <section class="section1">
+
+        <form class="donatie" id="donaties">
+            <h2 tabindex="0"><span id="spanName"></span>, zou jij een donatie willen doen aan het Rijksmuseum?</h2>
+            <div class="options">
+                <input type="radio" id="nee" name="donatie" value="Geen donatie" checked>
+                <label for="nee" tabindex="0" id="neeLabel">
+                    Nee
+                </label>
+                <input type="radio" id="2euro" name="donatie" value="2 euro">
+                <label for="2euro" tabindex="0" id="2Label">
+                    2 euro
+                </label>
+                <input type="radio" id="5euro" name="donatie" value="5 euro">
+                <label for="5euro" tabindex="0" id="5Label">
+                    5 euro
+                </label>
+                <input type="radio" id="10euro" name="donatie" value="10 euro">
+                <label for="10euro" tabindex="0" id="10Label">
+                    10 euro
+                </label>
+            </div>
+
+        </form>
+    </section>
+    <section class="section2">
+        <h2>Multimedia bij je bezoek</h2>
+        <form id="extraTour">
+            <label for="mediaTour">Wil je een multimediatour met leentoestel doen? 10 euro per persoon </label>
+            <select name="mediaTour" id="mediaTour">
+                <option value="Nee">Nee</option>
+                <option value="Ja">Ja</option>
+            </select>
+            <label for="familieSpel">Wil je een familiespel doen? Gratis </label>
+            <select name="familieSpel" id="familieSpel">
+                <option value="Nee">Nee</option>
+                <option value="Ja">Ja</option>
+            </select>
+        </form>
+    </section>
+</main>
+<script src="/js/extra.js"></script>
+<%- include('partials/bottomnav') %>
+
+<nav id="breadCrumbs">
+    <a href="/">home</a>
+    <span>> </span>
+    <a href="/ticketkeuze">tickets</a>
+    <span>> </span>
+    <a href="/ticketkeuze">tours</a>
+    <span>> </span>
+    <a href="/ticketkeuze">datum/tijd</a>
+    <span>> </span>
+    <a href="/ticketkeuze">gegevens</a>
+    <span>> </span>
+    <a href="/extra">extra's</a>
+</nav>
+
+<script>
+    let fname = localStorage.getItem('fname');
+    let spanName = document.getElementById("spanName");
+    spanName.innerHTML = fname;
+</script>
+
+<%- include('partials/footer') %>
