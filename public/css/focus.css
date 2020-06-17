@@ -15,7 +15,7 @@
   .ticketCheckBox input[type=checkbox]:focus{
     outline: 2px solid var(--succes);
 }
-.tickets .section2 p:focus, h2:focus, #breadCrumbs a:focus, #breadCrumbs a:hover{
+.tickets .section2 p:focus, h2:focus, #breadCrumbs a:focus, #breadCrumbs a:hover, .banner h1:focus, .extra h2:focus{
     color: var(--succes);
 }
 
@@ -26,3 +26,4 @@
 .overzicht ul:focus{
     border-color: var(--succes);
 }
+

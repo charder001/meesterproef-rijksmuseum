@@ -17,10 +17,15 @@ module.exports = function (app) {
     app.get('/gegevens', (req, res) => {
         res.render('gegevens', {
             title: 'Rijksmuseum | Persoonsgegevens',
+            nextPage: 'extra'
+        })
+    })
+    app.get('/extra', (req, res) => {
+        res.render('extra', {
+            title: 'Rijksmuseum | Extras',
             nextPage: 'overzicht'
         })
     })
-
     app.get('/rembrandt', (req, res) => {
         res.render('rembrandt', {
             title: 'Rijksmuseum | Rembrandt',

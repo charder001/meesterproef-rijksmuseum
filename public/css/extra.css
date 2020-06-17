@@ -1,0 +1,40 @@
+.extra h2 {
+    text-align: center;
+    width: 100%;
+    margin-top: 0;
+}
+.donatie {
+    padding: 2em 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.donatie label {
+    background-color: var(--light-grey);
+    padding: 1em;
+}
+
+.donatie .options {
+    margin-top: 3em;
+}
+
+.donatie input {
+    display: none;
+}
+
+.donatie label {
+    background-color: var(--light-grey);
+    padding: 1em;
+    margin: 0 1em;
+    transition: 300ms;
+}
+
+.donatie label:focus{
+    box-shadow: 0 10px 45px -5px rgba(0,0,0,.9);
+    padding: 1.3em;
+}
+
+.donatie input[type="radio"]:checked+label{
+    color: var(--succes);
+    padding: 1.3em;
+}

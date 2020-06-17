@@ -1,7 +1,3 @@
-ticketAmount = localStorage.getItem("ticketAmount");
-console.log(ticketAmount)
-// document.getElementById("amount").innerHTML = ticketAmount;
-
 let input = document.getElementById("entranceLabel");
 let input2 = document.getElementById("tour1Label");
 let input3 = document.getElementById("tour2Label");

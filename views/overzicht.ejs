@@ -1,7 +1,7 @@
 <%- include('partials/head') %>
 
 <div class="banner">
-    <h1>Overzicht bestelling</h1>
+    <h1 tabindex="0">Overzicht bestelling</h1>
 </div>
 <main class="overzicht">
     <section class="section1">
@@ -13,6 +13,9 @@
                 <li>Tijd: <span>10:15</span> </li>
                 <li>Naam: <span id="spanName"></span> </li>
                 <li>Email: <span id="spanEmail"></span> </li>
+                <li>Donatie: <span id="spanDonatie"></span> </li>
+                <li>Multimediatour: <span id="spanTour"></span> </li>
+                <li>Familiespel: <span id="spanFamilie"></span> </li>
                 <li>Totaal bedrag: <span id="total"></span> </li>
             </ul>
     </section>
@@ -21,25 +24,6 @@
     </section>
 </main>
 
-<script>
-    console.log(localStorage);
-    let ticketAmount = localStorage.getItem('ticketAmount');
-    let typeOfTicket = localStorage.getItem('typeOfTicket');
-    let email = localStorage.getItem('email');
-    let fname = localStorage.getItem('fname');
-
-    let spanAmount = document.getElementById("spanAmount");
-    let total = document.getElementById("total");
-    let spanType = document.getElementById("spanType");
-    let spanName = document.getElementById("spanName");
-    let spanEmail = document.getElementById("spanEmail");
-
-    total.innerHTML = ticketAmount * 15 + ' euro';
-    spanAmount.innerHTML = ticketAmount;
-    spanType.innerHTML = typeOfTicket;
-    spanName.innerHTML = fname;
-    spanEmail.innerHTML = email;
-
-</script>
+<script src="/js/overzicht.js"></script>
 
 <%- include('partials/footer') %>
