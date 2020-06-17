@@ -4,19 +4,19 @@
     <h1 tabindex="0">Persoonsgegevens</h1>
 </div>
 
-<main>
+<main class="gegevens">
     <section class="section1">
         <article>
             <h3>
                 Vul hier je persoonsgegevens in
             </h3>
             <form action="/" id="gegevens">
-                <label>Naam</label>
-                <input type="text" id="fname" class="nameInput" name="fname" placeholder="Voornaam">
-                <input type="text" id="tussen" class="nameInput" name="tussen" placeholder="tussenvoegsel">
+                <label for="fname">Naam</label>
+                <input type="text" id="fname" class="nameInput" name="fname" placeholder="Voornaam"><br>
+                <label for="lname">Achternaamaam</label>
                 <input type="text" id="lname" class="nameInput" name="lname" placeholder="Achternaam"><br>
                 <label for="email">E-mailadres:</label>
-                <input type="email" id="email" name="email"><br>
+                <input type="email" id="email" name="email"  placeholder="Email@mail.nl"><br>
     </section>
     <section class="section2">
         <input type="checkbox" id="agreement" name="agreement">
