@@ -20,5 +20,9 @@
 }
 
 .selectTour label:focus, input[type="radio"]:checked + label h2{
-    background-color: var(--succes);;
+    background-color: var(--succes);
+}
+
+.overzicht ul:focus{
+    border-color: var(--succes);
 }

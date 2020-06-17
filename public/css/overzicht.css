@@ -1,0 +1,22 @@
+.overzicht ul {
+    background-color: var(--light-grey);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    border: 2px solid var(--main-black);
+    width: 30%;
+    margin: auto;
+}
+
+.overzicht li {
+    width: 100%;
+
+}
+
+.overzicht span{
+    font-weight: 600;
+}
+
+.overzicht li:nth-child(odd){
+    background-color: var(--main-white)
+}
