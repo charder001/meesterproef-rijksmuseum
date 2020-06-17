@@ -153,6 +153,28 @@ module.exports = function (app) {
         var rawData = custom.parseDate(req.body.flexDateField)
         var stringData = String(rawData)
         var cleanData = stringData.split(" ")
+        if (cleanData[1] == "Jun") {
+            cleanData[1] = "Juni"
+        } else if (cleanData[1] == "Jul") {
+            cleanData[1] = "Juli"
+        } else if (cleanData[1] == "Aug") {
+            cleanData[1] = "Augustus"
+        }
+        if (cleanData[0] == "Mon") {
+            cleanData[0] = "Maandag"
+        } else if (cleanData[0] == "Tue") {
+            cleanData[0] = "Dinsdag"
+        } else if (cleanData[0] == "Wed") {
+            cleanData[0] = "Woensdag"
+        } else if (cleanData[0] == "Thu") {
+            cleanData[0] = "Donderdag"
+        } else if (cleanData[0] == "Fri") {
+            cleanData[0] = "Vrijdag"
+        } else if (cleanData[0] == "Sat") {
+            cleanData[0] = "Zaterdag"
+        } else if (cleanData[0] == "Sun") {
+            cleanData[0] = "Zondag"
+        }
         var sortedData = cleanData[0] + " " + cleanData[2] + " " + cleanData[1] + " " + cleanData[3]
 
         res.render('time', {
