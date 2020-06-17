@@ -80,10 +80,6 @@ li{
     display: block;
 }
 
-.datepicker .calendarButton {
-    margin-top: -1em;
-}
-
 #timeForm select {
     margin-top: 1em;
 }

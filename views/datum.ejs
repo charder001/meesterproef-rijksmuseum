@@ -7,19 +7,19 @@
 
 <main>
     <section class="section1">
-        <h3>Prik een gewenste datum voor het bezoek</h3>
+        <h2>Kies een gewenste bezoek datum</h2>
 
         <div id="myDatepicker" class="datepicker">
             <div class="date">
                 <form action="/datum" id="flexDateForm" method="post">
-
+                    <label for="flexDateField">Typ hieronder je gewenste datum, bijvoorbeeld: morgen, volgende week, next
+                    friday. Of gebruik de standaard datum prikker</label>
                     <button class="calendarButton button" aria-label="Kies met deze kalender je datum of typ hieronder vandaag, morgen, volgende week, etc.">
                         <!-- <span class="fa fa-calendar-alt fa-2x"></span> -->
                         <img id="calendarImg" src="images/calendar.png">
                     </button>
                     <br>
-                    <label for="flexDateField">Typ hieronder je gewenste datum, bijvoorbeeld: morgen, volgende week, next
-                        friday, etc.</label>
+                    
                     <input type="text" value="vandaag" name="flexDateField" id="flexDateField" aria-autocomplete="none">
                     <br>
 
