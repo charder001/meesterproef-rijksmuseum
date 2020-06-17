@@ -34,8 +34,9 @@ let slides = document.getElementsByClassName("dateButton");
 for (let i = 0; i < slides.length; i++) {
    chance = Math.floor(Math.random() * 100);
     if (chance > 80){
-        console.log('Niet beschikbaar')
-        slides[i].innerHTML="kaas";
+        let current = slides[i]
+        current.classList.add("nietBeschikbaar");
+        console.log(current.className)
     }else{
         console.log('beschikbaar')
     }

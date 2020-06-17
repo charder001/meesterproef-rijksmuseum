@@ -101,9 +101,7 @@ article p{
   justify-content: center;
   align-items: center;
 }
-.nietBeschikbaar{
-  color: red !important;
-}
+
 .homeItem {
   background-color: #fff;
   padding: .5em;
@@ -152,3 +150,6 @@ article p{
   color: var(--main-black);
 }
 
+.nietBeschikbaar{
+  color: red !important;
+}
