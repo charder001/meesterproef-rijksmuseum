@@ -153,3 +153,7 @@ article p{
 .nietBeschikbaar{
   color: red !important;
 }
+
+.rembrandt article{
+  width: 70%
+}

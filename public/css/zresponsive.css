@@ -35,6 +35,9 @@
     .tours .section1{
         padding: 2em 1em;
     }
+    .rembrandt article{
+        width: 90%;
+    }
 }
 
 @media (max-width:550px) {
