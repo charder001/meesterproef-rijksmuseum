@@ -238,6 +238,17 @@ DatePicker.prototype.init = function () {
       this.days.push(dpDay);
       index++;
     }
+      let slides = document.getElementsByClassName("dateButton");
+      for (let i = 0; i < slides.length; i++) {
+        chance = Math.floor(Math.random() * 100);
+          if (chance > 95){
+              let current = slides[i]
+              current.classList.add("nietBeschikbaar");
+              console.log(current.className)
+          }else{
+              console.log('beschikbaar')
+          }
+      }
   }
 
   this.updateGrid();
@@ -970,3 +981,4 @@ var DatePickerDay = function (domNode, datepicker, index, row, column) {
 //     flexDateField.value =  mm + `/${modifiedDate}` + `/${yyyy}`
 //     modifiedDate = dd
 // })
+
