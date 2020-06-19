@@ -27,4 +27,6 @@ Everyone has to complete the ticketflow and order their tickets. This includes p
   3 Install dependencies with `npm install`
   3. Give the command `npm run dev`
   4. navigate to localhost:3000
+  
+  The website is also live on heroku, you can find this at the top of this page.
 
