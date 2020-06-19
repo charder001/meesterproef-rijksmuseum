@@ -1,9 +1,17 @@
 # Meesterproef | Rijksmuseum
-## Concept
-Improved ticket flow that is accessible for everyone.
+Creating a more accessible ticketflow for the rijksmuseum website.
 
-![Screenshot_1](https://user-images.githubusercontent.com/43336468/82735265-a7ec0a80-9d20-11ea-988b-e10be4c1fec8.png)
+![homepagina](https://user-images.githubusercontent.com/43436118/85109008-f4881000-b210-11ea-8924-f2e5904a3a6b.PNG)
 
+## Goal
+Everyone has to complete the ticketflow and order their tickets. This includes people with impaired vision, hearing or reduced cognitive skills.  This means the front end of this ticketflow will need an interface which is accessible to all people.
+
+## Our vision
+- Reduce required actions per screen
+- Make flow useable with keyboard navigation
+- Reduce amount of information laid on the user
+- Better datepicker
+- Adding funnels/deeplinking users into flow
 
 ## Tech stuff
 - Node.js
@@ -20,6 +28,3 @@ Improved ticket flow that is accessible for everyone.
   3. Give the command `npm run dev`
   4. navigate to localhost:3000
 
-## Wishlist 
-- [x] accessible home page setup
-- [ ] Make dropdown datapicker server side 
