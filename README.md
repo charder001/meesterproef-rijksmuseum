@@ -6,6 +6,9 @@ Creating a more accessible ticketflow for the rijksmuseum website.
 ## Goal
 Everyone has to complete the ticketflow and order their tickets. This includes people with impaired vision, hearing or reduced cognitive skills.  This means the front end of this ticketflow will need an interface which is accessible to all people.
 
+## Assignment
+We have a debrief written in dutch, which you can find [here](https://docs.google.com/document/d/1qbECHzeHujOjh-6HYDP21BsywCdmTKIj2V3LmoKl5IE/edit?usp=sharing)
+
 ## Our vision
 - Reduce required actions per screen
 - Make flow useable with keyboard navigation
